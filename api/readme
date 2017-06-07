@@ -1,0 +1,2 @@
+From website directory run:
+docker build -t whereuatninja/website:develop .

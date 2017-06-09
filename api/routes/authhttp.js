@@ -4,9 +4,9 @@ var db = require('../lib/db')
 module.exports = function(app) {
 
   /* Read */
-  app.get('/api', function ( req, res ) {
+  app.get('/api/authhttp', function ( req, res ) {
     //todo figure out what we do at the root context
-    res.json({"hello":"world!"});
+    res.json({"authhttp":"hello world!"});
     //db.setup();
   });
 

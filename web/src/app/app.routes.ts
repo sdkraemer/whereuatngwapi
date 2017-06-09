@@ -4,6 +4,7 @@ import { CallbackComponent } from './callback/callback.component';
 
 export const ROUTES: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   //{ path: 'profile', component: ProfileComponent },
   { path: 'callback', component: CallbackComponent },
   { path: '**', redirectTo: '' }

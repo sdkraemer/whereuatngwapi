@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs/Observable';
+import { BehaviorSubject } from "rxjs/Rx";
 import 'rxjs/add/operator/filter';
 import * as auth0 from 'auth0-js';
 import { AuthHttp } from 'angular2-jwt';
 import { environment } from '../../environments/environment';
+import { User } from '../users/user';
 
 @Injectable()
 export class AuthService {
@@ -14,10 +17,13 @@ export class AuthService {
     responseType: 'token id_token',
     audience: 'http://localhost/api',
     redirectUri: 'http://localhost/callback',      
-    scope: 'openid profile read:messages'
+    scope: 'openid profile email read:messages'
   });
 
-  apiUrl: string = `${environment.apiUrl}/users`;
+  private _user: BehaviorSubject<User> = new BehaviorSubject(null);
+  public readonly user: Observable<User> = this._user.asObservable();
+
+  private apiUrl: string = `${environment.apiUrl}/users`;
 
   constructor(public router: Router,
               private authHttp: AuthHttp) {}
@@ -31,10 +37,14 @@ export class AuthService {
       if (authResult && authResult.accessToken && authResult.idToken) {
         window.location.hash = '';
         this.setSession(authResult);
+        this.getUserAndCreateUserIfNotExists(authResult.idTokenPayload);
         this.router.navigate(['/home']);
       } else if (err) {
         this.router.navigate(['/home']);
         console.log(err);
+      }
+      else if(this.isAuthenticated() && localStorage.getItem('profile')){
+        this.getUserAndCreateUserIfNotExists(JSON.parse(localStorage.getItem('profile')));
       }
     });
   }
@@ -44,10 +54,10 @@ export class AuthService {
     // Set the time that the access token will expire at
     const expiresAt = JSON.stringify((authResult.expiresIn * 1000) + new Date().getTime());
     localStorage.setItem('access_token', authResult.accessToken);
-    //localStorage.setItem('access_token', authResult.idToken);
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem('token', authResult.idToken);
     localStorage.setItem('expires_at', expiresAt);
+    localStorage.setItem('profile', JSON.stringify(authResult.idTokenPayload));
   }
 
   public logout(): void {
@@ -56,6 +66,7 @@ export class AuthService {
     localStorage.removeItem('id_token');
     localStorage.removeItem('token');
     localStorage.removeItem('expires_at');
+    localStorage.removeItem('profile');
     // Go back to the home route
     this.router.navigate(['/']);
   }
@@ -67,13 +78,19 @@ export class AuthService {
     return new Date().getTime() < expiresAt;
   }
 
-  private createUser(profileJson) {
-    console.log("creating user");
-    this.authHttp.post(this.apiUrl, profileJson)
+  private getUserAndCreateUserIfNotExists(idTokenPayload) {
+
+    var userData = {
+      name: idTokenPayload.name,
+      email: idTokenPayload.email,
+      picture: idTokenPayload.picture,
+      sub: idTokenPayload.sub
+    };
+
+    this.authHttp.post(this.apiUrl, userData)
       .map(res => res.json())
-      .subscribe(user => {
-        console.log("did it create a user?");
-        console.log(user);
+      .subscribe(userData => {
+        this._user.next(new User(userData));
       });
   }
 }

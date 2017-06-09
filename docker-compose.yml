@@ -1,0 +1,47 @@
+version: '2'
+services:
+  nginx:
+    container_name: nginx
+    image: whereuatngwapi/nginx
+    build: 
+      context: .
+      dockerfile: nginx.dockerfile
+    volumes:
+      - ./web/dist/:/var/www/public/
+    links:
+        - node-1:node-1
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - nodeapp-network
+  node-1:
+    container_name: whereuatngwapi-api
+    image: whereuatngwapi/api
+    build:
+      context: ./api
+      dockerfile: node.dockerfile
+    volumes:
+      - ./api/:/var/www/
+    links:
+      - rethinkdb:rethinkdb
+    ports:
+      - "3000:3000"
+      - "7000:7000"
+    networks:
+      - nodeapp-network
+    env_file:
+      - ./api/docker/env/app.${WHEREUATNG_API_APP_ENV}.env
+
+  rethinkdb:
+    container_name: whereuatngwapi-rethinkdb
+    image: rethinkdb:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - /data:/data
+    networks:
+      - nodeapp-network
+networks:
+  nodeapp-network:
+    driver: bridge

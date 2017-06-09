@@ -5,8 +5,11 @@ var accounts = require('../lib/dbAccounts');
 module.exports = function(app) {
     /* Create */
     app.post( '/api/users', function ( req, res ) {
-        accounts.addUpdateUser(req.user);
-        res.send();
+        accounts.addUpdateUser(req.body);
+        accounts.findUserByAuthId(req.body.sub, function(err, user){
+            if (err) { throw err; }
+            res.json(user);
+        });
     });
     /* Read */
     app.get('/api/users', function ( req, res ) {

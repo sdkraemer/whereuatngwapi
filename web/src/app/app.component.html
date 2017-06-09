@@ -11,6 +11,10 @@
 
     <!-- Filler that pushes the menu button to the end of the toolbar -->
     <span fxFlex></span>
+    <div *ngIf="user">
+      <img *ngIf="user.picture" src="{{user.picture}}" style="height:2em;width:2em;border-radius:50%;vertical-align:middle">
+      <span>Hi, {{user.name | titlecase}}</span>
+    </div>
     <button md-button *ngIf="!auth.isAuthenticated()" (click)="auth.login()">Login</button>
     <button md-button *ngIf="auth.isAuthenticated()" (click)="auth.logout()">Logout</button>
     <button md-icon-button [mdMenuTriggerFor]="themeMenu">

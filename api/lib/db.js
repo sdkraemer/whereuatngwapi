@@ -43,6 +43,7 @@ module.exports.setup = function() {
                     r.db(dbConfig.db).tableCreate(tableName).run(conn, function (err, result) {
                         if (err) {
                             logdebug("[DEBUG] RethinkDB table '%s' already exists (%s:%s)\n%s", tableName, err.name, err.msg, err.message);
+                            return;
                         }
                         else {
                             logdebug("[INFO ] RethinkDB table '%s' created", tableName);

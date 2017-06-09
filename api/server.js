@@ -37,7 +37,7 @@ var jwtCheck = jwt({
  app.use('/api/locations', [jwtCheck, userIdAuth]);
  app.use('/api/ninjas', [jwtCheck, userIdAuth]);
  app.use('/api/users', [jwtCheck, userIdAuth]);
- app.use('/api/authhttp', [jwtCheck]);
+ app.use('/api/authhttp', [jwtCheck, userIdAuth]);
 
 db.setup();
 

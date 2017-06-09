@@ -20,12 +20,14 @@ module.exports.addUpdateUser = function (user, callback) {
         name: user.name,
         email: user.email || "",
         authIds: [ user.sub ],
+        picture: user.picture,
         ninjas: []
     };
 
     var dbUserUpdate = {
         name: user.name,
-        email: user.email
+        email: user.email,
+        picture: user.picture,
     };
 
     onConnect(function (err, connection) {
@@ -37,6 +39,7 @@ module.exports.addUpdateUser = function (user, callback) {
             if (err) {
                 logerror("[ERROR] Failed to add database user " + err.message);
             }
+            
         });
     });
 };

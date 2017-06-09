@@ -67,6 +67,7 @@ export class AuthService {
     localStorage.removeItem('token');
     localStorage.removeItem('expires_at');
     localStorage.removeItem('profile');
+     this._user.next(null);
     // Go back to the home route
     this.router.navigate(['/']);
   }

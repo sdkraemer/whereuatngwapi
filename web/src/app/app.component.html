@@ -1,48 +1,55 @@
-<div fxLayout="column" fxFlex >
+<!-- <div fxLayout="column" fxFlex>
 
-  <md-toolbar color="primary">
-    <!--<button class="app-icon-button" (click)="sidenav.toggle()">
-      <i class="material-icons app-toolbar-menu">menu</i>
-    </button>-->
-    <button md-icon-button (click)="sidenav.toggle()">
-      <md-icon>menu</md-icon>
+  <mat-toolbar color="primary">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
     </button>
     <span>Whereuat?</span>
 
-    <!-- Filler that pushes the menu button to the end of the toolbar -->
     <span fxFlex></span>
-    <div *ngIf="user">
+    <div *ngIf="auth.user$ | async as user">
       <img *ngIf="user.picture" src="{{user.picture}}" style="height:2em;width:2em;border-radius:50%;vertical-align:middle">
       <span>Hi, {{user.name | titlecase}}</span>
     </div>
-    <button md-button *ngIf="!auth.isAuthenticated()" (click)="auth.login()">Login</button>
-    <button md-button *ngIf="auth.isAuthenticated()" (click)="auth.logout()">Logout</button>
-    <button md-icon-button [mdMenuTriggerFor]="themeMenu">
-      <md-icon>more_vert</md-icon>
+    <button mat-button *ngIf="!auth.authenticated" (click)="auth.login()">Login</button>
+    <button mat-button *ngIf="auth.authenticated" (click)="auth.logout()">Logout</button>
+    <button mat-icon-button [matMenuTriggerFor]="themeMenu">
+      <mat-icon>more_vert</mat-icon>
     </button>
-  </md-toolbar>
+  </mat-toolbar>
 
-  <md-sidenav-container fxFlex>
-    <md-sidenav #sidenav mode="over" class="app-sidenav">
+  <mat-menu #themeMenu x-position="before">
+    <button mat-menu-item (click)="isDarkTheme = !isDarkTheme">Toggle Theme</button>
+  </mat-menu> -->
 
-      <md-toolbar>
-        <md-toolbar-row>
-          <span><md-icon>account_circle</md-icon>Scott Kraemer</span>
-        </md-toolbar-row>
+<!-- <mat-sidenav-container fxFlex>
+    <mat-sidenav #sidenav mode="over" class="app-sidenav">
 
-      </md-toolbar>
-    </md-sidenav>
-    <div class="content" fxLayout="row" fxLayout.sm="column" fxLayoutGap="16px">
-      <md-card>
-        <router-outlet></router-outlet>
-      </md-card>
-      
-    </div>
+      <mat-toolbar>
+        <mat-toolbar-row>
+          <span>
+            <mat-icon>account_circle</mat-icon>Scott Kraemer</span>
+        </mat-toolbar-row>
 
-  </md-sidenav-container>
+      </mat-toolbar>
+    </mat-sidenav>
+    <router-outlet></router-outlet>
+  </mat-sidenav-container> -->
+<!-- <router-outlet></router-outlet>
+</div> -->
 
-  <md-menu #themeMenu x-position="before">
-    <button md-menu-item (click)="isDarkTheme = !isDarkTheme">Toggle Theme</button>
-  </md-menu>
+<mat-toolbar color="primary">
+  <!-- <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button> -->
+  <span>Whereuat?</span>
 
-</div>
+  <span fxFlex></span>
+  <div *ngIf="auth.user$ | async as user">
+    <img *ngIf="user.picture" src="{{user.picture}}" style="height:2em;width:2em;border-radius:50%;vertical-align:middle">
+    <span>Hi, {{user.name | titlecase}}</span>
+  </div>
+  <button mat-button *ngIf="!auth.authenticated" (click)="auth.login()">Login</button>
+  <button mat-button *ngIf="auth.authenticated" (click)="auth.logout()">Logout</button>
+</mat-toolbar>
+<router-outlet></router-outlet>

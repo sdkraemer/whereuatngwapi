@@ -5,5 +5,9 @@
 
 export const environment = {
   production: false,
-  apiUrl: "http://localhost/api"
+  apiUrl: "http://localhost/api",
+  auth0: {
+    audience: "http://localhost/api",
+    redirect: "http://localhost/auth0callback"
+  }
 };

@@ -1,0 +1,1254 @@
+2018-05-10T20:45:07.485856700 0.967319s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-10T20:45:07.486065000 0.967527s notice: Recursively removing directory /data/rethinkdb_data/tmp
+2018-05-10T20:45:07.492319900 0.973783s warn: Failed to sync parent directory of "/data/rethinkdb_data/tmp" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:07.493201800 0.974665s notice: Initializing directory /data/rethinkdb_data
+2018-05-10T20:45:07.493267000 0.974729s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/data/rethinkdb_data' did not already exist or is empty.)
+2018-05-10T20:45:07.493280400 0.974742s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-10T20:45:07.496439000 0.977903s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-10T20:45:07.496489800 0.977952s notice: Loading data from directory /data/rethinkdb_data
+2018-05-10T20:45:07.504335700 0.985799s warn: Failed to sync parent directory of "/data/rethinkdb_data/tmp/metadata.create" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:07.534826400 1.016289s warn: Failed to sync parent directory of "/data/rethinkdb_data/tmp/metadata.create" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:07.569930000 1.051393s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:07.572921400 1.054384s info: Automatically using cache size of 141 MB
+2018-05-10T20:45:07.763576200 1.245038s notice: Listening for intracluster connections on port 29015
+2018-05-10T20:45:07.764257500 1.245719s notice: Listening for client driver connections on port 28015
+2018-05-10T20:45:07.764332100 1.245794s notice: Listening for administrative HTTP connections on port 8080
+2018-05-10T20:45:08.076432600 1.557895s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-10T20:45:08.332895700 1.814358s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-10T20:45:08.510447400 1.991782s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-10T20:45:08.510699400 1.992033s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-10T20:45:12.077513700 5.558848s warn: Failed to sync parent directory of "/data/rethinkdb_data/tmp/c638d8f5-8b64-4882-a7c0-10a4406317e9.create" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:12.081002500 5.562337s warn: Failed to sync parent directory of "/data/rethinkdb_data/tmp/9b5ec5b7-3bdf-4da3-9640-f23fd4739493.create" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:12.124106600 5.605441s warn: Failed to sync parent directory of "/data/rethinkdb_data/tmp/c638d8f5-8b64-4882-a7c0-10a4406317e9.create" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:12.131226200 5.612560s warn: Failed to sync parent directory of "/data/rethinkdb_data/tmp/9b5ec5b7-3bdf-4da3-9640-f23fd4739493.create" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:12.205297100 5.686631s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:12.205330000 5.686669s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 1.
+2018-05-10T20:45:12.206153900 5.687488s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Added replica on this server.
+2018-05-10T20:45:12.226438600 5.707773s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:45:12.226611400 5.707945s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 1.
+2018-05-10T20:45:12.227169300 5.708503s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Added replica on this server.
+2018-05-10T20:45:12.232625900 5.713960s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 1. Latest log index is 0.
+2018-05-10T20:45:12.233319300 5.714654s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 1. Latest log index is 0.
+2018-05-10T20:45:12.697791400 6.179126s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Configuration is changing.
+2018-05-10T20:45:12.732033400 6.213368s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Configuration is changing.
+2018-05-10T20:45:47.562231500 41.042692s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-10T20:45:47.562388000 41.042848s notice: Shutting down client connections...
+2018-05-10T20:45:47.562460400 41.042920s notice: All client connections closed.
+2018-05-10T20:45:47.562508300 41.042968s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-10T20:45:47.584712400 41.065172s notice: Storage engine shut down.
+2018-05-10T20:48:10.146892500 0.915920s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-10T20:48:10.150581300 0.919612s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-10T20:48:10.153998400 0.923027s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-10T20:48:10.154471100 0.923497s notice: Loading data from directory /data/rethinkdb_data
+2018-05-10T20:48:10.159042300 0.928069s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:48:10.185712300 0.954739s info: Automatically using cache size of 139 MB
+2018-05-10T20:48:10.360443900 1.129470s notice: Listening for intracluster connections on port 29015
+2018-05-10T20:48:10.362400400 1.131426s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:48:10.384142700 1.153168s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-10T20:48:10.404412200 1.173438s notice: Listening for client driver connections on port 28015
+2018-05-10T20:48:10.404686000 1.173712s notice: Listening for administrative HTTP connections on port 8080
+2018-05-10T20:48:10.576426300 1.345452s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-10T20:48:10.768867600 1.537893s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-10T20:48:10.978122200 1.747148s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-10T20:48:10.978166800 1.747192s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-10T20:48:11.789817400 2.558843s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 2.
+2018-05-10T20:48:11.797013100 2.566039s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 2. Latest log index is 4.
+2018-05-10T20:48:11.984038500 2.753064s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 2.
+2018-05-10T20:48:11.993246900 2.762272s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 2. Latest log index is 4.
+2018-05-11T22:54:07.418038300 93861.191870s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-11T22:54:07.418142800 93861.191974s notice: Shutting down client connections...
+2018-05-11T22:54:07.418335900 93861.192167s notice: All client connections closed.
+2018-05-11T22:54:07.418364600 93861.192196s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-11T22:54:07.435739100 93861.209571s notice: Storage engine shut down.
+2018-05-11T23:01:37.424812600 0.905655s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-11T23:01:37.427889500 0.908733s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-11T23:01:37.431513300 0.912358s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-11T23:01:37.431959800 0.912802s notice: Loading data from directory /data/rethinkdb_data
+2018-05-11T23:01:37.433954300 0.914797s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-11T23:01:37.449010200 0.929854s info: Automatically using cache size of 127 MB
+2018-05-11T23:01:37.632236300 1.113079s notice: Listening for intracluster connections on port 29015
+2018-05-11T23:01:37.646852700 1.127695s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-11T23:01:37.678427200 1.159269s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-11T23:01:37.698245000 1.179087s notice: Listening for client driver connections on port 28015
+2018-05-11T23:01:37.698483700 1.179326s notice: Listening for administrative HTTP connections on port 8080
+2018-05-11T23:01:38.019579000 1.500421s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-11T23:01:38.224052500 1.704895s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-11T23:01:38.668233600 2.149076s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-11T23:01:38.668307500 2.149150s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-11T23:01:38.716395400 2.197238s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 3.
+2018-05-11T23:01:38.723148600 2.203991s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 3. Latest log index is 7.
+2018-05-11T23:01:39.643466200 3.124308s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 3.
+2018-05-11T23:01:39.663557200 3.144400s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 3. Latest log index is 7.
+2018-05-11T23:04:10.715913800 154.196747s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-11T23:04:10.715998200 154.196830s notice: Shutting down client connections...
+2018-05-11T23:04:10.716027200 154.196859s notice: All client connections closed.
+2018-05-11T23:04:10.716030400 154.196863s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-11T23:04:10.721356900 154.202189s notice: Storage engine shut down.
+2018-05-11T23:08:57.002562600 0.904788s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-11T23:08:57.004378100 0.906605s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-11T23:08:57.008079100 0.910305s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-11T23:08:57.008823300 0.911048s notice: Loading data from directory /data/rethinkdb_data
+2018-05-11T23:08:57.014222200 0.916448s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-11T23:08:57.032981000 0.935207s info: Automatically using cache size of 124 MB
+2018-05-11T23:08:57.212915600 1.115141s notice: Listening for intracluster connections on port 29015
+2018-05-11T23:08:57.216732000 1.118957s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-11T23:08:57.245336800 1.147562s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-11T23:08:57.270252600 1.172478s notice: Listening for client driver connections on port 28015
+2018-05-11T23:08:57.270572000 1.172797s notice: Listening for administrative HTTP connections on port 8080
+2018-05-11T23:08:57.555546200 1.457771s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-11T23:08:57.771189900 1.673415s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-11T23:08:57.974840100 1.877065s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-11T23:08:57.974844700 1.877069s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-11T23:08:58.349659900 2.251885s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 4.
+2018-05-11T23:08:58.355474700 2.257699s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 4. Latest log index is 10.
+2018-05-11T23:08:58.445642000 2.347867s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 4.
+2018-05-11T23:08:58.453083300 2.355308s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 4. Latest log index is 10.
+2018-05-14T15:41:41.619658700 232365.750694s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T15:41:41.619812500 232365.750847s notice: Shutting down client connections...
+2018-05-14T15:41:41.620058600 232365.751093s notice: All client connections closed.
+2018-05-14T15:41:41.620060900 232365.751095s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T15:41:41.640276600 232365.771311s notice: Storage engine shut down.
+2018-05-14T15:50:42.813931300 1.083431s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T15:50:42.816371600 1.085872s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T15:50:42.820157700 1.089658s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T15:50:42.820475200 1.089974s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T15:50:42.822818200 1.092317s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T15:50:42.840668300 1.110168s info: Automatically using cache size of 148 MB
+2018-05-14T15:50:43.025602900 1.295102s notice: Listening for intracluster connections on port 29015
+2018-05-14T15:50:43.030393800 1.299893s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T15:50:43.053362400 1.322861s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T15:50:43.082157200 1.351656s notice: Listening for client driver connections on port 28015
+2018-05-14T15:50:43.091780800 1.361279s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T15:50:43.370785000 1.640284s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T15:50:43.572188100 1.841687s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T15:50:43.937904200 2.207403s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T15:50:43.938009000 2.207508s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T15:50:44.460556700 2.730055s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 5.
+2018-05-14T15:50:44.468839300 2.738339s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 5. Latest log index is 13.
+2018-05-14T15:50:44.978373300 3.247872s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 5.
+2018-05-14T15:50:44.991761200 3.261260s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 5. Latest log index is 13.
+2018-05-14T15:51:03.934201300 22.201261s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T15:51:03.934330800 22.201391s notice: Shutting down client connections...
+2018-05-14T15:51:03.934640600 22.201700s notice: All client connections closed.
+2018-05-14T15:51:03.934642900 22.201702s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T15:51:03.949986400 22.217046s notice: Storage engine shut down.
+2018-05-14T16:00:05.033748400 1.590336s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T16:00:05.035934900 1.592523s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T16:00:05.041354000 1.597942s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T16:00:05.041701800 1.598288s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T16:00:05.044389800 1.600976s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:00:05.107982600 1.664571s info: Automatically using cache size of 263 MB
+2018-05-14T16:00:05.309058500 1.865645s notice: Listening for intracluster connections on port 29015
+2018-05-14T16:00:05.337205100 1.893791s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:00:05.360364200 1.916951s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:00:05.402091000 1.958678s notice: Listening for client driver connections on port 28015
+2018-05-14T16:00:05.402390000 1.958977s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T16:00:05.747958000 2.304544s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:00:05.954381300 2.510968s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:00:06.255921800 2.812508s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:00:06.255986900 2.812573s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T16:00:07.146360800 3.702947s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 6.
+2018-05-14T16:00:07.158220600 3.714807s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 6. Latest log index is 16.
+2018-05-14T16:00:07.165267700 3.721854s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 6.
+2018-05-14T16:00:07.184425600 3.741012s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 6. Latest log index is 16.
+2018-05-14T16:06:19.715950400 376.273069s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T16:06:19.716030800 376.273149s notice: Shutting down client connections...
+2018-05-14T16:06:19.716071700 376.273190s notice: All client connections closed.
+2018-05-14T16:06:19.716087800 376.273206s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T16:06:19.723723300 376.280842s notice: Storage engine shut down.
+2018-05-14T16:06:33.910394900 2.706898s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T16:06:33.933236300 2.729740s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T16:06:33.936140500 2.732646s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T16:06:33.937983000 2.734486s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T16:06:33.942849500 2.739353s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:06:33.981907000 2.778410s info: Automatically using cache size of 220 MB
+2018-05-14T16:06:34.157983100 2.954485s notice: Listening for intracluster connections on port 29015
+2018-05-14T16:06:34.177291400 2.973794s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:06:34.197511700 2.994014s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:06:34.208161600 3.004664s notice: Listening for client driver connections on port 28015
+2018-05-14T16:06:34.208681900 3.005184s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T16:06:34.384929700 3.181432s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:06:34.558401000 3.354903s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:06:34.733071900 3.529574s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:06:34.733264900 3.529767s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T16:06:35.328828700 4.125331s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 7.
+2018-05-14T16:06:35.334645500 4.131148s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 7. Latest log index is 19.
+2018-05-14T16:06:35.740858900 4.537361s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 7.
+2018-05-14T16:06:35.752357700 4.548860s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 7. Latest log index is 19.
+2018-05-14T16:09:10.797115500 159.594546s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T16:09:10.797158000 159.594588s notice: Shutting down client connections...
+2018-05-14T16:09:10.797359600 159.594796s notice: All client connections closed.
+2018-05-14T16:09:10.797383000 159.594813s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T16:09:10.813082300 159.610513s notice: Storage engine shut down.
+2018-05-14T16:09:20.769898100 0.915822s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T16:09:20.771743500 0.917668s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T16:09:20.773890600 0.919817s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T16:09:20.774410400 0.920334s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T16:09:20.776942300 0.922865s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:09:20.798445500 0.944370s info: Automatically using cache size of 240 MB
+2018-05-14T16:09:21.026793900 1.172717s notice: Listening for intracluster connections on port 29015
+2018-05-14T16:09:21.047571200 1.193494s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:09:21.076610100 1.222533s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:09:21.149525100 1.295448s notice: Listening for client driver connections on port 28015
+2018-05-14T16:09:21.150462800 1.296386s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T16:09:21.324312500 1.470236s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:09:21.888942800 2.034866s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:09:22.124274400 2.270197s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:09:22.124350700 2.270274s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T16:09:22.147177900 2.293101s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 8.
+2018-05-14T16:09:22.162701700 2.308625s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 8. Latest log index is 22.
+2018-05-14T16:09:22.266205500 2.412129s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 8.
+2018-05-14T16:09:22.280012100 2.425935s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 8. Latest log index is 22.
+2018-05-14T16:10:25.940613800 66.086680s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T16:10:25.941066200 66.087132s notice: Shutting down client connections...
+2018-05-14T16:10:25.941218600 66.087284s notice: All client connections closed.
+2018-05-14T16:10:25.941246700 66.087325s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T16:10:25.950524700 66.096591s notice: Storage engine shut down.
+2018-05-14T16:10:33.209809100 0.805693s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T16:10:33.212015700 0.807900s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T16:10:33.215571500 0.811457s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T16:10:33.215985700 0.811868s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T16:10:33.219571200 0.815454s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:10:33.243500100 0.839384s info: Automatically using cache size of 235 MB
+2018-05-14T16:10:33.515221800 1.111105s notice: Listening for intracluster connections on port 29015
+2018-05-14T16:10:33.518645300 1.114528s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:10:33.535520900 1.131404s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:10:33.556619800 1.152503s notice: Listening for client driver connections on port 28015
+2018-05-14T16:10:33.556808100 1.152691s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T16:10:33.737757200 1.333621s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:10:33.917143900 1.513007s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:10:34.138868700 1.734732s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:10:34.138879300 1.734742s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T16:10:34.624725200 2.220589s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 9.
+2018-05-14T16:10:34.632690100 2.228554s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 9. Latest log index is 25.
+2018-05-14T16:10:35.432760300 3.028624s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 9.
+2018-05-14T16:10:35.443301400 3.039165s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 9. Latest log index is 25.
+2018-05-14T16:13:05.194515000 152.790359s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T16:13:05.194635600 152.790480s notice: Shutting down client connections...
+2018-05-14T16:13:05.194658400 152.790502s notice: All client connections closed.
+2018-05-14T16:13:05.194660900 152.790505s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T16:13:05.198752900 152.794597s notice: Storage engine shut down.
+2018-05-14T16:13:17.383642000 1.021163s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T16:13:17.390707200 1.028230s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T16:13:17.392564800 1.030087s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T16:13:17.395234700 1.032756s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T16:13:17.405384800 1.042906s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:13:17.424602800 1.062145s info: Automatically using cache size of 235 MB
+2018-05-14T16:13:17.622014500 1.259536s notice: Listening for intracluster connections on port 29015
+2018-05-14T16:13:17.627535000 1.265056s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:13:17.660004700 1.297526s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T16:13:17.684551200 1.322072s notice: Listening for client driver connections on port 28015
+2018-05-14T16:13:17.684798000 1.322319s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T16:13:17.993395100 1.630916s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:13:18.171454400 1.808976s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:13:18.447070300 2.084591s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T16:13:18.447083300 2.084604s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T16:13:18.959529400 2.597016s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 10.
+2018-05-14T16:13:18.968252300 2.605739s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 10. Latest log index is 28.
+2018-05-14T16:13:19.066041600 2.703528s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 10.
+2018-05-14T16:13:19.076842600 2.714329s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 10. Latest log index is 28.
+2018-05-14T17:26:20.035003700 4383.681685s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T17:26:20.035093100 4383.681774s notice: Shutting down client connections...
+2018-05-14T17:26:20.035223900 4383.681905s notice: All client connections closed.
+2018-05-14T17:26:20.035227200 4383.681908s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T17:26:20.041521400 4383.688203s notice: Storage engine shut down.
+2018-05-14T17:26:39.867834700 1.916322s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T17:26:39.870172300 1.918661s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T17:26:39.879424300 1.927914s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T17:26:39.894957600 1.943445s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T17:26:39.914201600 1.962689s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:26:39.999658400 2.048149s info: Automatically using cache size of 208 MB
+2018-05-14T17:26:40.282795100 2.331283s notice: Listening for intracluster connections on port 29015
+2018-05-14T17:26:40.289907500 2.338395s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:26:40.314198100 2.362686s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:26:40.366032500 2.414520s notice: Listening for client driver connections on port 28015
+2018-05-14T17:26:40.366329200 2.414817s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T17:26:40.543485100 2.591973s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:26:40.718563100 2.767051s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:26:40.892268700 2.940756s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:26:40.892335200 2.940822s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T17:26:41.495430900 3.543918s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 11.
+2018-05-14T17:26:41.504635100 3.553123s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 11. Latest log index is 31.
+2018-05-14T17:26:41.639314400 3.687802s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 11.
+2018-05-14T17:26:41.644554500 3.693042s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 11. Latest log index is 31.
+2018-05-14T17:45:23.910299100 1125.965435s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T17:45:23.910416700 1125.965552s notice: Shutting down client connections...
+2018-05-14T17:45:23.910545400 1125.965681s notice: All client connections closed.
+2018-05-14T17:45:23.910565000 1125.965700s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T17:45:23.916835800 1125.971971s notice: Storage engine shut down.
+2018-05-14T17:46:04.303884600 0.927777s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T17:46:04.305891900 0.929786s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T17:46:04.307548900 0.931442s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T17:46:04.307811400 0.931704s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T17:46:04.310028700 0.933921s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:46:04.329185800 0.953079s info: Automatically using cache size of 231 MB
+2018-05-14T17:46:04.507882300 1.131775s notice: Listening for intracluster connections on port 29015
+2018-05-14T17:46:04.515966000 1.139858s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:46:04.544444000 1.168336s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:46:04.562944900 1.186837s notice: Listening for client driver connections on port 28015
+2018-05-14T17:46:04.563142100 1.187034s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T17:46:04.851818500 1.475752s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:46:05.060976900 1.684910s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:46:05.342347700 1.966281s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:46:05.342364900 1.966298s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T17:46:05.910843000 2.534776s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 12.
+2018-05-14T17:46:05.927018000 2.550951s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 12. Latest log index is 34.
+2018-05-14T17:46:06.394312500 3.018246s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 12.
+2018-05-14T17:46:06.400258800 3.024192s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 12. Latest log index is 34.
+2018-05-14T17:46:51.922416000 48.546658s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T17:46:51.922497300 48.546739s notice: Shutting down client connections...
+2018-05-14T17:46:51.922520900 48.546762s notice: All client connections closed.
+2018-05-14T17:46:51.922523200 48.546765s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T17:46:51.926636600 48.550879s notice: Storage engine shut down.
+2018-05-14T17:47:03.020306900 0.890850s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T17:47:03.025954500 0.896500s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T17:47:03.027756100 0.898300s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T17:47:03.027999900 0.898543s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T17:47:03.031162200 0.901705s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:47:03.051034700 0.921580s info: Automatically using cache size of 228 MB
+2018-05-14T17:47:03.225287100 1.095830s notice: Listening for intracluster connections on port 29015
+2018-05-14T17:47:03.248978100 1.119521s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:47:03.285964700 1.156507s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T17:47:03.315570700 1.186114s notice: Listening for client driver connections on port 28015
+2018-05-14T17:47:03.315879100 1.186422s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T17:47:03.582882000 1.453425s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:47:03.801340000 1.671883s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:47:04.020757100 1.891300s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T17:47:04.020868000 1.891411s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T17:47:04.315932200 2.186475s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 13.
+2018-05-14T17:47:04.322476300 2.193019s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 13. Latest log index is 37.
+2018-05-14T17:47:04.495055100 2.365598s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 13.
+2018-05-14T17:47:04.503158200 2.373701s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 13. Latest log index is 37.
+2018-05-14T18:10:08.270406400 1386.149164s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T18:10:08.270479000 1386.149237s notice: Shutting down client connections...
+2018-05-14T18:10:08.270498500 1386.149256s notice: All client connections closed.
+2018-05-14T18:10:08.270500500 1386.149258s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T18:10:08.273723500 1386.152481s notice: Storage engine shut down.
+2018-05-14T18:10:20.068195400 0.926739s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T18:10:20.071673200 0.930219s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T18:10:20.073881600 0.932425s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T18:10:20.074303500 0.932845s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T18:10:20.083344900 0.941887s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:10:20.105228900 0.963798s info: Automatically using cache size of 225 MB
+2018-05-14T18:10:20.283324300 1.141892s notice: Listening for intracluster connections on port 29015
+2018-05-14T18:10:20.292791600 1.151359s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:10:20.339797500 1.198365s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:10:20.532213400 1.390781s notice: Listening for client driver connections on port 28015
+2018-05-14T18:10:20.532371000 1.390938s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T18:10:20.723390400 1.581958s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:10:21.001253200 1.859821s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:10:21.184814100 2.043382s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:10:21.184996000 2.043563s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T18:10:21.350973900 2.209542s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 14.
+2018-05-14T18:10:21.360559300 2.219127s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 14. Latest log index is 40.
+2018-05-14T18:10:22.459451600 3.318019s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 14.
+2018-05-14T18:10:22.465537000 3.324104s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 14. Latest log index is 40.
+2018-05-14T18:21:51.025973800 691.884617s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T18:21:51.026163100 691.884807s notice: Shutting down client connections...
+2018-05-14T18:21:51.026209600 691.884853s notice: All client connections closed.
+2018-05-14T18:21:51.026211800 691.884855s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T18:21:51.030498900 691.889143s notice: Storage engine shut down.
+2018-05-14T18:22:04.342351700 0.935519s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T18:22:04.344267400 0.937435s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T18:22:04.345868400 0.939036s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T18:22:04.346111100 0.939277s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T18:22:04.349190600 0.942357s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:22:04.385098000 0.978269s info: Automatically using cache size of 220 MB
+2018-05-14T18:22:04.563671000 1.156838s notice: Listening for intracluster connections on port 29015
+2018-05-14T18:22:04.565649800 1.158816s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:22:04.583565700 1.176732s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:22:04.618177700 1.211344s notice: Listening for client driver connections on port 28015
+2018-05-14T18:22:04.619482000 1.212649s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T18:22:04.959812700 1.552979s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:22:05.150079700 1.743247s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:22:05.379535900 1.972672s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:22:05.379594900 1.972731s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T18:22:05.634208500 2.227345s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 15.
+2018-05-14T18:22:05.641251200 2.234388s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 15. Latest log index is 43.
+2018-05-14T18:22:06.212021500 2.805158s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 15.
+2018-05-14T18:22:06.232300200 2.825437s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 15. Latest log index is 43.
+2018-05-14T18:48:28.684101700 1585.278803s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T18:48:28.684200800 1585.278902s notice: Shutting down client connections...
+2018-05-14T18:48:28.684454000 1585.279155s notice: All client connections closed.
+2018-05-14T18:48:28.684456300 1585.279158s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T18:48:28.689915600 1585.284617s notice: Storage engine shut down.
+2018-05-14T18:48:42.282307100 0.963807s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T18:48:42.284816700 0.966317s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T18:48:42.288015200 0.969516s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T18:48:42.288436500 0.969935s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T18:48:42.291274000 0.972773s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:48:42.316001400 0.997501s info: Automatically using cache size of 214 MB
+2018-05-14T18:48:42.494143700 1.175643s notice: Listening for intracluster connections on port 29015
+2018-05-14T18:48:42.514614600 1.196114s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:48:42.564199100 1.245698s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T18:48:42.580511000 1.262010s notice: Listening for client driver connections on port 28015
+2018-05-14T18:48:42.580807100 1.262306s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T18:48:42.907646600 1.589146s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:48:43.099950900 1.781450s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:48:43.409141800 2.090641s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T18:48:43.409223200 2.090722s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T18:48:43.761025500 2.442525s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 16.
+2018-05-14T18:48:43.768535000 2.450034s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 16. Latest log index is 46.
+2018-05-14T18:48:44.078487600 2.759987s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 16.
+2018-05-14T18:48:44.083909400 2.765408s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 16. Latest log index is 46.
+2018-05-14T20:00:51.115359900 4329.797817s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:00:51.115446800 4329.797904s notice: Shutting down client connections...
+2018-05-14T20:00:51.115486600 4329.797943s notice: All client connections closed.
+2018-05-14T20:00:51.115502100 4329.797959s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:00:51.134277200 4329.816735s notice: Storage engine shut down.
+2018-05-14T20:01:10.955611700 1.083319s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:01:10.959065100 1.086772s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:01:10.963536900 1.091244s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:01:10.963757600 1.091463s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:01:10.966939900 1.094646s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:01:10.992985200 1.120693s info: Automatically using cache size of 211 MB
+2018-05-14T20:01:11.211826700 1.339533s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:01:11.215537400 1.343244s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:01:11.256519300 1.384226s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:01:11.278938600 1.406645s notice: Listening for client driver connections on port 28015
+2018-05-14T20:01:11.279191200 1.406897s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:01:11.643210900 1.770917s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:01:11.833516600 1.961223s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:01:12.049711300 2.177409s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:01:12.049756200 2.177453s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:01:12.657815800 2.785513s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 17.
+2018-05-14T20:01:12.666927100 2.794625s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 17. Latest log index is 49.
+2018-05-14T20:01:12.944719800 3.072417s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 17.
+2018-05-14T20:01:12.954653100 3.082351s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 17. Latest log index is 49.
+2018-05-14T20:03:35.979329200 146.107013s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:03:35.979407800 146.107091s notice: Shutting down client connections...
+2018-05-14T20:03:35.979506200 146.107190s notice: All client connections closed.
+2018-05-14T20:03:35.979527000 146.107210s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:03:35.983938400 146.111622s notice: Storage engine shut down.
+2018-05-14T20:03:55.818838000 0.957538s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:03:55.820690300 0.959392s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:03:55.823391100 0.962092s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:03:55.823610900 0.962310s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:03:55.826281800 0.964981s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:03:55.841439000 0.980139s info: Automatically using cache size of 210 MB
+2018-05-14T20:03:56.024796700 1.163496s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:03:56.029903600 1.168603s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:03:56.057312200 1.196012s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:03:56.070407400 1.209107s notice: Listening for client driver connections on port 28015
+2018-05-14T20:03:56.070622300 1.209321s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:03:56.332354900 1.471054s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:03:56.527853900 1.666553s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:03:56.779862200 1.918561s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:03:56.779872600 1.918572s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:03:57.254135500 2.392775s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 18.
+2018-05-14T20:03:57.262159100 2.400799s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 18. Latest log index is 52.
+2018-05-14T20:03:57.574376200 2.713016s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 18.
+2018-05-14T20:03:57.592026600 2.730666s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 18. Latest log index is 52.
+2018-05-14T20:11:56.838375600 481.978768s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:11:56.838454300 481.978846s notice: Shutting down client connections...
+2018-05-14T20:11:56.838487300 481.978879s notice: All client connections closed.
+2018-05-14T20:11:56.838490000 481.978882s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:11:56.842436900 481.982829s notice: Storage engine shut down.
+2018-05-14T20:12:03.324260600 0.783706s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:12:03.325909600 0.785356s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:12:03.328019700 0.787466s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:12:03.328437600 0.787883s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:12:03.332286700 0.791733s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:12:03.351869300 0.811316s info: Automatically using cache size of 206 MB
+2018-05-14T20:12:03.532388900 0.991834s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:12:03.539256900 0.998702s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:12:03.560915900 1.020361s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:12:03.579380700 1.038826s notice: Listening for client driver connections on port 28015
+2018-05-14T20:12:03.579520600 1.038966s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:12:03.785167800 1.244613s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:12:03.993872600 1.453318s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:12:04.278266500 1.737712s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:12:04.278282300 1.737728s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:12:04.656153100 2.115598s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 19.
+2018-05-14T20:12:04.661415100 2.120861s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 19. Latest log index is 55.
+2018-05-14T20:12:04.851246300 2.310692s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 19.
+2018-05-14T20:12:04.857160900 2.316607s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 19. Latest log index is 55.
+2018-05-14T20:14:28.945763000 146.405221s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:14:28.945863100 146.405321s notice: Shutting down client connections...
+2018-05-14T20:14:28.945959900 146.405417s notice: All client connections closed.
+2018-05-14T20:14:28.945978300 146.405436s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:14:28.952072700 146.411531s notice: Storage engine shut down.
+2018-05-14T20:14:35.995345600 0.853530s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:14:35.998933400 0.857119s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:14:36.001739600 0.859925s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:14:36.002801800 0.860986s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:14:36.004866000 0.863050s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:14:36.032600300 0.890785s info: Automatically using cache size of 202 MB
+2018-05-14T20:14:36.223449100 1.081633s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:14:36.236000900 1.094185s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:14:36.412977600 1.271162s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:14:36.434600500 1.292785s notice: Listening for client driver connections on port 28015
+2018-05-14T20:14:36.434980200 1.293164s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:14:36.660960900 1.519145s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:14:36.963468600 1.821653s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:14:37.143462800 2.001647s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:14:37.143525100 2.001709s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:14:37.956244400 2.814398s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 20.
+2018-05-14T20:14:37.961470000 2.819624s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 20. Latest log index is 58.
+2018-05-14T20:14:38.204369700 3.062524s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 20.
+2018-05-14T20:14:38.215324900 3.073479s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 20. Latest log index is 58.
+2018-05-14T20:19:43.894863500 308.753015s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:19:43.894912400 308.753064s notice: Shutting down client connections...
+2018-05-14T20:19:43.894930700 308.753082s notice: All client connections closed.
+2018-05-14T20:19:43.894932700 308.753084s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:19:43.898943900 308.757095s notice: Storage engine shut down.
+2018-05-14T20:19:51.092424700 0.919596s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:19:51.093955800 0.921128s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:19:51.095661400 0.922833s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:19:51.095681800 0.922853s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:19:51.097996100 0.925167s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:19:51.115560500 0.942732s info: Automatically using cache size of 197 MB
+2018-05-14T20:19:51.296508600 1.123680s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:19:51.304333800 1.131505s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:19:51.343176100 1.170347s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:19:51.359546700 1.186718s notice: Listening for client driver connections on port 28015
+2018-05-14T20:19:51.359798100 1.186969s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:19:51.633205500 1.460377s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:19:51.888019600 1.715191s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:19:52.265383100 2.092554s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:19:52.265395400 2.092566s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:19:52.731794100 2.558957s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 21.
+2018-05-14T20:19:52.741475900 2.568640s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 21. Latest log index is 61.
+2018-05-14T20:19:53.332958900 3.160122s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 21.
+2018-05-14T20:19:53.338871300 3.166035s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 21. Latest log index is 61.
+2018-05-14T20:26:53.643986800 423.471127s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:26:53.644062600 423.471203s notice: Shutting down client connections...
+2018-05-14T20:26:53.644579700 423.471720s notice: All client connections closed.
+2018-05-14T20:26:53.644604400 423.471744s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:26:53.649008000 423.476148s notice: Storage engine shut down.
+2018-05-14T20:27:01.851926000 0.798448s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:27:01.856980000 0.803503s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:27:01.859722100 0.806244s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:27:01.860270300 0.806790s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:27:01.864144600 0.810665s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:27:01.889332900 0.835854s info: Automatically using cache size of 195 MB
+2018-05-14T20:27:02.102751200 1.049271s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:27:02.107699300 1.054220s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:27:02.130929400 1.077450s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:27:02.165993100 1.112513s notice: Listening for client driver connections on port 28015
+2018-05-14T20:27:02.166257200 1.112777s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:27:02.408671100 1.355152s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:27:02.616070000 1.562551s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:27:03.055823600 2.002305s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:27:03.055890400 2.002371s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:27:03.644492400 2.590973s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 22.
+2018-05-14T20:27:03.652339500 2.598820s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 22. Latest log index is 64.
+2018-05-14T20:27:04.065897400 3.012378s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 22.
+2018-05-14T20:27:04.084470900 3.030952s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 22. Latest log index is 64.
+2018-05-14T20:42:28.889185500 927.835499s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:42:28.889253500 927.835566s notice: Shutting down client connections...
+2018-05-14T20:42:28.889370400 927.835683s notice: All client connections closed.
+2018-05-14T20:42:28.889373400 927.835686s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:42:28.915509500 927.861823s notice: Storage engine shut down.
+2018-05-14T20:42:38.873766100 0.901579s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:42:38.876880500 0.904694s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:42:38.878418000 0.906231s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:42:38.878570900 0.906383s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:42:38.880882600 0.908695s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:42:38.898938700 0.926752s info: Automatically using cache size of 190 MB
+2018-05-14T20:42:39.088026700 1.115839s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:42:39.090823300 1.118636s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:42:39.127353000 1.155165s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:42:39.161536400 1.189349s notice: Listening for client driver connections on port 28015
+2018-05-14T20:42:39.161777400 1.189590s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:42:39.436522300 1.464335s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:42:39.708303900 1.736116s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:42:40.182020400 2.209833s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:42:40.182189000 2.210001s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:42:40.209122800 2.236935s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 23.
+2018-05-14T20:42:40.226897100 2.254709s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 23. Latest log index is 67.
+2018-05-14T20:42:40.472004000 2.499816s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 23.
+2018-05-14T20:42:40.481791900 2.509604s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 23. Latest log index is 67.
+2018-05-14T20:44:40.786978300 122.814791s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:44:40.787055600 122.814868s notice: Shutting down client connections...
+2018-05-14T20:44:40.787098900 122.814911s notice: All client connections closed.
+2018-05-14T20:44:40.787115000 122.814927s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:44:40.791296600 122.819109s notice: Storage engine shut down.
+2018-05-14T20:44:48.354861800 0.920811s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:44:48.356533200 0.922484s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:44:48.358498400 0.924449s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:44:48.358677900 0.924627s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:44:48.360754400 0.926704s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:44:48.377278400 0.943228s info: Automatically using cache size of 189 MB
+2018-05-14T20:44:48.552617200 1.118566s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:44:48.557330500 1.123280s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:44:48.580362000 1.146311s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:44:48.596907200 1.162857s notice: Listening for client driver connections on port 28015
+2018-05-14T20:44:48.597511300 1.163461s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:44:48.892109000 1.458058s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:44:49.110774600 1.676724s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:44:49.288517200 1.854466s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:44:49.288528800 1.854478s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:44:50.369732000 2.935681s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 24.
+2018-05-14T20:44:50.377789300 2.943738s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 24. Latest log index is 70.
+2018-05-14T20:44:50.431469500 2.997419s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 24.
+2018-05-14T20:44:50.437235300 3.003185s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 24. Latest log index is 70.
+2018-05-14T20:47:01.517422700 134.083385s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:47:01.517515600 134.083478s notice: Shutting down client connections...
+2018-05-14T20:47:01.517568900 134.083531s notice: All client connections closed.
+2018-05-14T20:47:01.517592400 134.083555s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:47:01.522499600 134.088462s notice: Storage engine shut down.
+2018-05-14T20:47:09.527497500 0.821071s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:47:09.529289400 0.822864s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:47:09.532019700 0.825595s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:47:09.532588500 0.826162s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:47:09.541335500 0.834909s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:47:09.561394000 0.854969s info: Automatically using cache size of 184 MB
+2018-05-14T20:47:09.832021200 1.125594s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:47:09.837654600 1.131228s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:47:09.883483300 1.177057s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:47:09.939407800 1.232981s notice: Listening for client driver connections on port 28015
+2018-05-14T20:47:09.939463300 1.233036s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:47:10.127205600 1.420779s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:47:10.477180700 1.770754s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:47:10.680185200 1.973758s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:47:10.680196700 1.973769s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:47:11.492941500 2.786515s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 25.
+2018-05-14T20:47:11.499103800 2.792677s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 25. Latest log index is 73.
+2018-05-14T20:47:11.543520500 2.837094s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 25.
+2018-05-14T20:47:11.549257900 2.842831s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 25. Latest log index is 73.
+2018-05-14T20:58:53.353212000 704.647858s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T20:58:53.353380500 704.648013s notice: Shutting down client connections...
+2018-05-14T20:58:53.353509500 704.648142s notice: All client connections closed.
+2018-05-14T20:58:53.353511800 704.648144s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T20:58:53.365637500 704.660270s notice: Storage engine shut down.
+2018-05-14T20:59:06.986151900 0.912350s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T20:59:06.988585700 0.914785s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T20:59:06.991777400 0.917977s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T20:59:06.992042400 0.918240s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T20:59:06.995289700 0.921488s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:59:07.018713100 0.944912s info: Automatically using cache size of 180 MB
+2018-05-14T20:59:07.251731400 1.177929s notice: Listening for intracluster connections on port 29015
+2018-05-14T20:59:07.256391100 1.182589s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:59:07.284842300 1.211040s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T20:59:07.308069800 1.234268s notice: Listening for client driver connections on port 28015
+2018-05-14T20:59:07.308260700 1.234459s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T20:59:07.588842800 1.515041s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:59:07.761244800 1.687443s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:59:07.998048300 1.924231s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T20:59:07.998200100 1.924383s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T20:59:08.653794300 2.579977s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 26.
+2018-05-14T20:59:08.661006900 2.587190s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 26. Latest log index is 76.
+2018-05-14T20:59:08.794915900 2.721099s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 26.
+2018-05-14T20:59:08.799877300 2.726060s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 26. Latest log index is 76.
+2018-05-14T21:10:21.534160300 675.460846s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T21:10:21.534326300 675.461012s notice: Shutting down client connections...
+2018-05-14T21:10:21.535197800 675.461883s notice: All client connections closed.
+2018-05-14T21:10:21.535200200 675.461892s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T21:10:21.570262200 675.496948s notice: Storage engine shut down.
+2018-05-14T21:10:29.143938200 0.964391s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T21:10:29.145690100 0.966144s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T21:10:29.147381500 0.967835s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T21:10:29.147588600 0.968041s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T21:10:29.150375500 0.970828s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:10:29.171070600 0.991524s info: Automatically using cache size of 179 MB
+2018-05-14T21:10:29.355120700 1.175573s notice: Listening for intracluster connections on port 29015
+2018-05-14T21:10:29.365907200 1.186359s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:10:29.382891100 1.203343s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:10:29.398763100 1.219215s notice: Listening for client driver connections on port 28015
+2018-05-14T21:10:29.399034500 1.219486s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T21:10:29.717638400 1.538091s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:10:29.946533200 1.766985s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:10:30.195729900 2.016182s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:10:30.195746300 2.016198s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T21:10:31.280206800 3.100659s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 27.
+2018-05-14T21:10:31.286105900 3.106558s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 27. Latest log index is 79.
+2018-05-14T21:10:31.369055600 3.189508s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 27.
+2018-05-14T21:10:31.374706700 3.195159s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 27. Latest log index is 79.
+2018-05-14T21:25:40.734672700 912.554946s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T21:25:40.734754000 912.555028s notice: Shutting down client connections...
+2018-05-14T21:25:40.734797000 912.555070s notice: All client connections closed.
+2018-05-14T21:25:40.734831700 912.555105s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T21:25:40.739253400 912.559527s notice: Storage engine shut down.
+2018-05-14T21:26:25.148306200 0.871923s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T21:26:25.152355300 0.875990s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T21:26:25.158235700 0.881854s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T21:26:25.158547000 0.882164s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T21:26:25.166085500 0.889702s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:26:25.200610200 0.924228s info: Automatically using cache size of 177 MB
+2018-05-14T21:26:25.381591700 1.105207s notice: Listening for intracluster connections on port 29015
+2018-05-14T21:26:25.388698500 1.112326s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:26:25.412736700 1.136353s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:26:25.468311800 1.191928s notice: Listening for client driver connections on port 28015
+2018-05-14T21:26:25.468474400 1.192090s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T21:26:25.657667800 1.381284s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:26:25.901163600 1.624779s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:26:26.127485000 1.851101s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:26:26.127530100 1.851146s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T21:26:26.868564500 2.592180s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 28.
+2018-05-14T21:26:26.878184000 2.601800s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 28. Latest log index is 82.
+2018-05-14T21:26:27.052611800 2.776228s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 28.
+2018-05-14T21:26:27.058595100 2.782211s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 28. Latest log index is 82.
+2018-05-14T21:28:08.117921600 103.841547s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T21:28:08.118068900 103.841694s notice: Shutting down client connections...
+2018-05-14T21:28:08.118161800 103.841787s notice: All client connections closed.
+2018-05-14T21:28:08.118194300 103.841819s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T21:28:08.124693100 103.848319s notice: Storage engine shut down.
+2018-05-14T21:28:16.417656300 1.095118s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T21:28:16.420269700 1.097732s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T21:28:16.433679100 1.111142s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T21:28:16.436124500 1.113586s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T21:28:16.474505300 1.151966s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:28:16.494916400 1.172378s info: Automatically using cache size of 175 MB
+2018-05-14T21:28:16.851968500 1.529429s notice: Listening for intracluster connections on port 29015
+2018-05-14T21:28:16.857021800 1.534482s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:28:16.877784500 1.555245s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:28:16.890149800 1.567611s notice: Listening for client driver connections on port 28015
+2018-05-14T21:28:16.890707600 1.568168s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T21:28:17.235988500 1.913449s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:28:17.570597400 2.248058s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:28:17.743719000 2.421180s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:28:17.743735100 2.421195s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T21:28:18.362580700 3.040041s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 29.
+2018-05-14T21:28:18.369449500 3.046910s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 29. Latest log index is 85.
+2018-05-14T21:28:18.676438100 3.353875s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 29.
+2018-05-14T21:28:18.682469500 3.359907s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 29. Latest log index is 85.
+2018-05-14T21:33:46.683626400 331.361033s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T21:33:46.683681400 331.361088s notice: Shutting down client connections...
+2018-05-14T21:33:46.683780400 331.361187s notice: All client connections closed.
+2018-05-14T21:33:46.683791500 331.361198s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T21:33:46.700311900 331.377719s notice: Storage engine shut down.
+2018-05-14T21:33:53.271016900 0.853319s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T21:33:53.272975200 0.855279s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T21:33:53.275042100 0.857346s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T21:33:53.275381800 0.857683s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T21:33:53.277634200 0.859936s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:33:53.295788400 0.878091s info: Automatically using cache size of 174 MB
+2018-05-14T21:33:53.506338800 1.089945s notice: Listening for intracluster connections on port 29015
+2018-05-14T21:33:53.510724000 1.094330s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:33:53.532812800 1.116419s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:33:53.548547500 1.132154s notice: Listening for client driver connections on port 28015
+2018-05-14T21:33:53.548747600 1.132354s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T21:33:53.839194600 1.422801s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:33:54.094050400 1.677657s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:33:54.285802400 1.869409s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:33:54.285814700 1.869421s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T21:33:55.391379200 2.974986s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 30.
+2018-05-14T21:33:55.401585600 2.985192s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 30. Latest log index is 88.
+2018-05-14T21:33:55.409931000 2.993537s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 30.
+2018-05-14T21:33:55.417495300 3.001102s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 30. Latest log index is 88.
+2018-05-14T21:34:46.202593900 53.784880s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T21:34:46.202752100 53.785037s notice: Shutting down client connections...
+2018-05-14T21:34:46.202780900 53.785066s notice: All client connections closed.
+2018-05-14T21:34:46.202784200 53.785069s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T21:34:46.211257900 53.793543s notice: Storage engine shut down.
+2018-05-14T21:34:52.305507400 0.986969s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T21:34:52.307991400 0.989454s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T21:34:52.311331000 0.992793s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T21:34:52.311693800 0.993154s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T21:34:52.315869400 0.997330s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:34:52.387627500 1.069090s info: Automatically using cache size of 167 MB
+2018-05-14T21:34:52.581152000 1.262613s notice: Listening for intracluster connections on port 29015
+2018-05-14T21:34:52.586238500 1.267699s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:34:52.751351500 1.432812s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:34:52.766535200 1.448017s notice: Listening for client driver connections on port 28015
+2018-05-14T21:34:52.766825400 1.448286s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T21:34:53.000658700 1.682119s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:34:53.295624700 1.977085s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:34:53.530360600 2.211788s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:34:53.530438200 2.211865s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T21:34:54.655868500 3.337296s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 31.
+2018-05-14T21:34:54.664573900 3.346001s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 31. Latest log index is 91.
+2018-05-14T21:34:54.723247600 3.404675s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 31.
+2018-05-14T21:34:54.731924000 3.413352s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 31. Latest log index is 91.
+2018-05-14T21:36:59.293769100 127.975197s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T21:36:59.293819900 127.975248s notice: Shutting down client connections...
+2018-05-14T21:36:59.293862500 127.975291s notice: All client connections closed.
+2018-05-14T21:36:59.293864600 127.975293s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T21:36:59.301648700 127.983078s notice: Storage engine shut down.
+2018-05-14T21:37:06.266052800 0.952085s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T21:37:06.268301700 0.954336s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T21:37:06.271197600 0.957230s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T21:37:06.271605600 0.957637s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T21:37:06.274758000 0.960789s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:37:06.301868400 0.987901s info: Automatically using cache size of 167 MB
+2018-05-14T21:37:06.492971900 1.179003s notice: Listening for intracluster connections on port 29015
+2018-05-14T21:37:06.497292200 1.183323s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:37:06.702345700 1.388377s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:37:06.716525500 1.402557s notice: Listening for client driver connections on port 28015
+2018-05-14T21:37:06.716718300 1.402749s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T21:37:06.944745400 1.630776s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:37:07.167248500 1.853280s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:37:07.375049100 2.061080s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:37:07.375120200 2.061151s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T21:37:07.870805700 2.556837s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 32.
+2018-05-14T21:37:07.876219200 2.562250s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 32. Latest log index is 94.
+2018-05-14T21:37:08.253968100 2.939999s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 32.
+2018-05-14T21:37:08.266702300 2.952733s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 32. Latest log index is 94.
+2018-05-14T21:44:37.197426800 451.884761s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T21:44:37.197510100 451.884844s notice: Shutting down client connections...
+2018-05-14T21:44:37.198199200 451.885533s notice: All client connections closed.
+2018-05-14T21:44:37.198258700 451.885592s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T21:44:37.206169700 451.893504s notice: Storage engine shut down.
+2018-05-14T21:44:43.556288800 0.899652s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T21:44:43.557902100 0.901267s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T21:44:43.559856100 0.903220s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T21:44:43.560052200 0.903415s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T21:44:43.566240500 0.909604s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:44:43.582818000 0.926182s info: Automatically using cache size of 164 MB
+2018-05-14T21:44:43.767281200 1.110602s notice: Listening for intracluster connections on port 29015
+2018-05-14T21:44:43.774208600 1.117529s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:44:43.805673700 1.148994s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:44:43.823448400 1.166769s notice: Listening for client driver connections on port 28015
+2018-05-14T21:44:43.823801000 1.167122s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T21:44:44.107123800 1.450444s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:44:44.302552600 1.645873s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:44:44.499895300 1.843216s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:44:44.500012900 1.843333s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T21:44:45.301769800 2.645090s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 33.
+2018-05-14T21:44:45.308290000 2.651611s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 33. Latest log index is 97.
+2018-05-14T21:44:45.594223400 2.937544s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 33.
+2018-05-14T21:44:45.600933100 2.944254s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 33. Latest log index is 97.
+2018-05-14T21:58:25.483194400 822.826749s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T21:58:25.483243700 822.826798s notice: Shutting down client connections...
+2018-05-14T21:58:25.483417700 822.826972s notice: All client connections closed.
+2018-05-14T21:58:25.483420200 822.826975s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T21:58:25.499701600 822.843256s notice: Storage engine shut down.
+2018-05-14T21:58:35.458962200 0.975602s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T21:58:35.461181700 0.977822s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T21:58:35.462890800 0.979531s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T21:58:35.463230600 0.979870s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T21:58:35.466868400 0.983508s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:58:35.511842300 1.028483s info: Automatically using cache size of 161 MB
+2018-05-14T21:58:35.705959300 1.222617s notice: Listening for intracluster connections on port 29015
+2018-05-14T21:58:35.739004100 1.255644s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:58:35.777614500 1.294254s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T21:58:35.801202500 1.317842s notice: Listening for client driver connections on port 28015
+2018-05-14T21:58:35.801475100 1.318114s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T21:58:36.186783400 1.703422s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:58:36.403714900 1.920354s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:58:36.721753800 2.238393s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T21:58:36.721852500 2.238491s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T21:58:36.898247600 2.414887s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 34.
+2018-05-14T21:58:36.908967700 2.425607s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 34. Latest log index is 100.
+2018-05-14T21:58:36.936201900 2.452841s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 34.
+2018-05-14T21:58:36.942926500 2.459565s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 34. Latest log index is 100.
+2018-05-14T22:01:42.217426900 187.734033s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:01:42.217529000 187.734135s notice: Shutting down client connections...
+2018-05-14T22:01:42.217765000 187.734371s notice: All client connections closed.
+2018-05-14T22:01:42.217777800 187.734384s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:01:42.229112300 187.745719s notice: Storage engine shut down.
+2018-05-14T22:02:02.110222900 1.074490s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:02:02.112189100 1.076458s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:02:02.128638600 1.092907s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:02:02.128896700 1.093163s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:02:02.130885000 1.095152s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:02:02.146237900 1.110506s info: Automatically using cache size of 158 MB
+2018-05-14T22:02:02.333608400 1.297875s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:02:02.339612800 1.303880s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:02:02.366701300 1.330968s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:02:02.398437900 1.362704s notice: Listening for client driver connections on port 28015
+2018-05-14T22:02:02.398639200 1.362906s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:02:02.895525100 1.859792s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:02:03.128063800 2.092330s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:02:03.395872400 2.360139s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:02:03.395888600 2.360155s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:02:04.212303000 3.176567s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 35.
+2018-05-14T22:02:04.218218700 3.182482s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 35.
+2018-05-14T22:02:04.238204000 3.202468s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 35. Latest log index is 103.
+2018-05-14T22:02:04.257776200 3.222040s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 35. Latest log index is 103.
+2018-05-14T22:04:30.446086600 149.410363s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:04:30.446245500 149.410522s notice: Shutting down client connections...
+2018-05-14T22:04:30.446264400 149.410540s notice: All client connections closed.
+2018-05-14T22:04:30.446266500 149.410543s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:04:30.451796000 149.416072s notice: Storage engine shut down.
+2018-05-14T22:04:37.695396600 1.072664s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:04:37.701613800 1.078883s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:04:37.703490900 1.080759s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:04:37.704084400 1.081352s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:04:37.706428500 1.083696s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:04:37.724526100 1.101807s info: Automatically using cache size of 154 MB
+2018-05-14T22:04:37.901567100 1.278834s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:04:37.904070300 1.281338s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:04:37.955038500 1.332306s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:04:38.000066400 1.377334s notice: Listening for client driver connections on port 28015
+2018-05-14T22:04:38.000197400 1.377465s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:04:38.191386800 1.568654s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:04:38.437411600 1.814679s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:04:38.669006100 2.046273s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:04:38.669021600 2.046288s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:04:39.306651400 2.683838s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 36.
+2018-05-14T22:04:39.317634400 2.694821s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 36. Latest log index is 106.
+2018-05-14T22:04:39.622489700 2.999676s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 36.
+2018-05-14T22:04:39.629783800 3.006971s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 36. Latest log index is 106.
+2018-05-14T22:11:23.089126200 406.466269s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:11:23.089175300 406.466318s notice: Shutting down client connections...
+2018-05-14T22:11:23.089285100 406.466427s notice: All client connections closed.
+2018-05-14T22:11:23.089287400 406.466430s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:11:23.108264100 406.485407s notice: Storage engine shut down.
+2018-05-14T22:11:29.877523100 0.979783s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:11:29.879813300 0.982075s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:11:29.893995900 0.996258s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:11:29.894372300 0.996632s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:11:29.896307600 0.998568s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:11:29.911573200 1.013834s info: Automatically using cache size of 150 MB
+2018-05-14T22:11:30.093663700 1.195925s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:11:30.096887100 1.199147s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:11:30.115820800 1.218081s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:11:30.136296600 1.238556s notice: Listening for client driver connections on port 28015
+2018-05-14T22:11:30.136381200 1.238641s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:11:30.468443800 1.570704s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:11:30.667088400 1.769348s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:11:30.916231700 2.018491s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:11:30.916463600 2.018723s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:11:31.201671400 2.303931s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 37.
+2018-05-14T22:11:31.208148800 2.310408s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 37. Latest log index is 109.
+2018-05-14T22:11:31.510750100 2.613010s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 37.
+2018-05-14T22:11:31.519970400 2.622230s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 37. Latest log index is 109.
+2018-05-14T22:13:18.671391600 109.773637s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:13:18.671449800 109.773695s notice: Shutting down client connections...
+2018-05-14T22:13:18.671512600 109.773757s notice: All client connections closed.
+2018-05-14T22:13:18.671522400 109.773767s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:13:18.674823700 109.777069s notice: Storage engine shut down.
+2018-05-14T22:13:25.953589300 0.990003s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:13:25.955752800 0.992167s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:13:25.957361300 0.993775s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:13:25.957564900 0.993978s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:13:25.960136400 0.996550s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:13:25.979743400 1.016157s info: Automatically using cache size of 145 MB
+2018-05-14T22:13:26.167917900 1.204331s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:13:26.177345300 1.213758s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:13:26.203580200 1.240008s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:13:26.223602700 1.260016s notice: Listening for client driver connections on port 28015
+2018-05-14T22:13:26.223938400 1.260351s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:13:26.623948400 1.660362s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:13:26.833992600 1.870406s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:13:27.055874300 2.092287s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:13:27.055887000 2.092300s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:13:27.519431400 2.555844s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 38.
+2018-05-14T22:13:27.526884700 2.563298s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 38. Latest log index is 112.
+2018-05-14T22:13:27.601869700 2.638283s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 38.
+2018-05-14T22:13:27.615919600 2.652333s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 38. Latest log index is 112.
+2018-05-14T22:15:30.031361600 125.067724s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:15:30.031414500 125.067776s notice: Shutting down client connections...
+2018-05-14T22:15:30.032222400 125.068584s notice: All client connections closed.
+2018-05-14T22:15:30.032236900 125.068599s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:15:30.041690900 125.078053s notice: Storage engine shut down.
+2018-05-14T22:15:38.078590100 0.977732s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:15:38.082247500 0.981391s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:15:38.121189200 1.020352s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:15:38.121650900 1.020792s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:15:38.124766600 1.023908s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:15:38.143059800 1.042202s info: Automatically using cache size of 144 MB
+2018-05-14T22:15:38.317294700 1.216437s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:15:38.322922300 1.222064s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:15:38.376635500 1.275777s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:15:38.396256300 1.295398s notice: Listening for client driver connections on port 28015
+2018-05-14T22:15:38.396524300 1.295666s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:15:38.590799100 1.489941s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:15:38.832073500 1.731215s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:15:39.049526300 1.948668s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:15:39.049622300 1.948764s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:15:39.504754400 2.403870s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 39.
+2018-05-14T22:15:39.510669800 2.409785s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 39. Latest log index is 115.
+2018-05-14T22:15:39.682158200 2.581274s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 39.
+2018-05-14T22:15:39.692135500 2.591251s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 39. Latest log index is 115.
+2018-05-14T22:21:31.511952100 354.411027s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:21:31.512032300 354.411106s notice: Shutting down client connections...
+2018-05-14T22:21:31.512115300 354.411189s notice: All client connections closed.
+2018-05-14T22:21:31.512135800 354.411210s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:21:31.524233400 354.423308s notice: Storage engine shut down.
+2018-05-14T22:24:09.842573200 1.132558s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:24:09.845280200 1.135266s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:24:09.849609900 1.139595s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:24:09.850059900 1.140044s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:24:09.852688600 1.142672s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:24:09.872428000 1.162413s info: Automatically using cache size of 142 MB
+2018-05-14T22:24:10.050294100 1.340278s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:24:10.066971400 1.356955s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:24:10.125121200 1.415105s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:24:10.149633700 1.439618s notice: Listening for client driver connections on port 28015
+2018-05-14T22:24:10.149851200 1.439835s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:24:10.402820000 1.692804s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:24:10.607804500 1.897788s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:24:10.903622500 2.193606s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:24:10.903634800 2.193618s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:24:11.552460400 2.842444s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 40.
+2018-05-14T22:24:11.559684100 2.849668s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 40. Latest log index is 118.
+2018-05-14T22:24:11.566986500 2.856970s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 40.
+2018-05-14T22:24:11.577189800 2.867174s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 40. Latest log index is 118.
+2018-05-14T22:30:58.789786400 410.079730s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:30:58.789833800 410.079777s notice: Shutting down client connections...
+2018-05-14T22:30:58.790052600 410.079996s notice: All client connections closed.
+2018-05-14T22:30:58.790063400 410.080007s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:30:58.811749100 410.101693s notice: Storage engine shut down.
+2018-05-14T22:31:08.360060100 1.061925s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:31:08.382622400 1.084488s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:31:08.384386800 1.086252s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:31:08.384587900 1.086452s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:31:08.387062800 1.088927s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:31:08.441477400 1.143342s info: Automatically using cache size of 135 MB
+2018-05-14T22:31:08.835965000 1.537829s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:31:08.847673300 1.549537s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:31:08.888246500 1.590111s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:31:08.913425400 1.615289s notice: Listening for client driver connections on port 28015
+2018-05-14T22:31:08.913541900 1.615405s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:31:09.346884200 2.048736s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:31:09.575283400 2.277135s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:31:09.753819800 2.455672s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:31:09.753837500 2.455689s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:31:10.061594200 2.763446s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 41.
+2018-05-14T22:31:10.157827500 2.859679s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 41.
+2018-05-14T22:31:10.164402200 2.866254s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 41. Latest log index is 121.
+2018-05-14T22:31:10.168098300 2.869950s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 41. Latest log index is 121.
+2018-05-14T22:36:08.201625000 300.905183s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:36:08.201761900 300.905319s notice: Shutting down client connections...
+2018-05-14T22:36:08.201916200 300.905474s notice: All client connections closed.
+2018-05-14T22:36:08.201919600 300.905477s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:36:08.216342900 300.919900s notice: Storage engine shut down.
+2018-05-14T22:40:12.468123600 1.262877s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:40:12.470555500 1.265310s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:40:12.472489600 1.267243s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:40:12.472526500 1.267279s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:40:12.476273700 1.271027s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:40:12.493548400 1.288302s info: Automatically using cache size of 137 MB
+2018-05-14T22:40:12.669392000 1.464145s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:40:12.675627000 1.470380s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:40:12.756521700 1.551275s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:40:12.777795800 1.572548s notice: Listening for client driver connections on port 28015
+2018-05-14T22:40:12.777976800 1.572729s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:40:12.968495200 1.763248s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:40:13.248573100 2.043326s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:40:13.446543700 2.241296s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:40:13.446607600 2.241360s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:40:13.954886900 2.749639s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 42.
+2018-05-14T22:40:13.960910100 2.755663s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 42. Latest log index is 124.
+2018-05-14T22:40:13.981541200 2.776294s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 42.
+2018-05-14T22:40:13.987186000 2.781939s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 42. Latest log index is 124.
+2018-05-14T22:43:04.191905500 172.986640s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:43:04.191955800 172.986690s notice: Shutting down client connections...
+2018-05-14T22:43:04.191989000 172.986723s notice: All client connections closed.
+2018-05-14T22:43:04.191991200 172.986725s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:43:04.202719800 172.997454s notice: Storage engine shut down.
+2018-05-14T22:43:13.111196600 1.095844s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:43:13.113291500 1.097940s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:43:13.115132700 1.099781s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:43:13.115413400 1.100060s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:43:13.118316200 1.102963s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:43:13.140453400 1.125101s info: Automatically using cache size of 129 MB
+2018-05-14T22:43:13.582887400 1.567534s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:43:13.584941300 1.569588s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:43:13.611988000 1.596635s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:43:13.713638700 1.698287s notice: Listening for client driver connections on port 28015
+2018-05-14T22:43:13.713807800 1.698454s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:43:14.129557100 2.114204s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:43:14.318177000 2.302824s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:43:14.747493600 2.732134s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:43:14.747574900 2.732215s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:43:14.867495000 2.852135s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 43.
+2018-05-14T22:43:14.900433500 2.885074s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 43. Latest log index is 127.
+2018-05-14T22:43:14.986927000 2.971567s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 43.
+2018-05-14T22:43:15.000381700 2.985022s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 43. Latest log index is 127.
+2018-05-14T22:45:02.780502300 110.765125s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:45:02.780545100 110.765168s notice: Shutting down client connections...
+2018-05-14T22:45:02.780937300 110.765560s notice: All client connections closed.
+2018-05-14T22:45:02.780947900 110.765571s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:45:02.789122200 110.773745s notice: Storage engine shut down.
+2018-05-14T22:45:22.387222500 1.085656s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T22:45:22.389451000 1.087886s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T22:45:22.391921300 1.090357s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T22:45:22.392329600 1.090763s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T22:45:22.394876600 1.093310s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:45:22.416348100 1.114783s info: Automatically using cache size of 128 MB
+2018-05-14T22:45:22.599301500 1.297735s notice: Listening for intracluster connections on port 29015
+2018-05-14T22:45:22.604376100 1.302810s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:45:22.661224100 1.359658s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T22:45:22.675049500 1.373483s notice: Listening for client driver connections on port 28015
+2018-05-14T22:45:22.675512800 1.373946s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T22:45:23.153454300 1.851888s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:45:23.441854700 2.140288s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:45:23.693973000 2.392407s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T22:45:23.694034700 2.392468s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T22:45:23.774564600 2.472998s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 44.
+2018-05-14T22:45:23.781844900 2.480279s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 44. Latest log index is 130.
+2018-05-14T22:45:24.654198600 3.352153s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 44.
+2018-05-14T22:45:24.662503800 3.360458s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 44. Latest log index is 130.
+2018-05-14T22:50:56.043217400 334.741133s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-14T22:50:56.043358800 334.741274s notice: Shutting down client connections...
+2018-05-14T22:50:56.043420500 334.741336s notice: All client connections closed.
+2018-05-14T22:50:56.043447000 334.741362s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-14T22:50:56.054208900 334.752125s notice: Storage engine shut down.
+2018-05-14T23:06:48.514394900 0.930615s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-14T23:06:48.517182100 0.933403s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-14T23:06:48.521660700 0.937882s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-14T23:06:48.522115900 0.938335s notice: Loading data from directory /data/rethinkdb_data
+2018-05-14T23:06:48.534449800 0.950670s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T23:06:48.585123200 1.001345s info: Automatically using cache size of 111 MB
+2018-05-14T23:06:48.760289000 1.176509s notice: Listening for intracluster connections on port 29015
+2018-05-14T23:06:48.793747500 1.209967s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T23:06:48.863890800 1.280111s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-14T23:06:48.994152500 1.410372s notice: Listening for client driver connections on port 28015
+2018-05-14T23:06:48.994264100 1.410483s notice: Listening for administrative HTTP connections on port 8080
+2018-05-14T23:06:49.411744700 1.827964s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T23:06:49.611832500 2.028052s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T23:06:49.882562400 2.298759s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-14T23:06:49.882653100 2.298849s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-14T23:06:50.126474800 2.542671s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 45.
+2018-05-14T23:06:50.132378200 2.548575s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 45. Latest log index is 133.
+2018-05-14T23:06:50.498988100 2.915185s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 45.
+2018-05-14T23:06:50.527416200 2.943613s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 45. Latest log index is 133.
+2018-05-15T16:35:31.747663900 62924.229842s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-15T16:35:31.748827900 62924.231006s notice: Shutting down client connections...
+2018-05-15T16:35:31.748966300 62924.231144s notice: All client connections closed.
+2018-05-15T16:35:31.748969200 62924.231147s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-15T16:35:31.756105400 62924.238284s notice: Storage engine shut down.
+2018-05-15T16:35:38.500645600 0.837242s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-15T16:35:38.503936100 0.840534s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-15T16:35:38.508397700 0.845116s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-15T16:35:38.508855300 0.845451s notice: Loading data from directory /data/rethinkdb_data
+2018-05-15T16:35:38.520049600 0.856646s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:35:38.579064600 0.915662s info: Automatically using cache size of 102 MB
+2018-05-15T16:35:38.756080000 1.092675s notice: Listening for intracluster connections on port 29015
+2018-05-15T16:35:38.769237500 1.105833s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:35:38.828909800 1.165505s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:35:38.844238000 1.180833s notice: Listening for client driver connections on port 28015
+2018-05-15T16:35:38.844398700 1.180994s notice: Listening for administrative HTTP connections on port 8080
+2018-05-15T16:35:39.154551900 1.491147s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:35:39.328252900 1.664848s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:35:39.608763600 1.945359s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:35:39.608829800 1.945425s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-15T16:35:40.115853600 2.452449s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 46.
+2018-05-15T16:35:40.122266500 2.458862s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 46. Latest log index is 136.
+2018-05-15T16:35:40.383610100 2.720206s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 46.
+2018-05-15T16:35:40.391236800 2.727832s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 46. Latest log index is 136.
+2018-05-15T16:47:33.229857400 715.567927s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-15T16:47:33.230049600 715.568119s notice: Shutting down client connections...
+2018-05-15T16:47:33.230087700 715.568157s notice: All client connections closed.
+2018-05-15T16:47:33.230092600 715.568162s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-15T16:47:33.236554000 715.574623s notice: Storage engine shut down.
+2018-05-15T16:48:22.696837100 1.852794s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-15T16:48:22.699514600 1.855473s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-15T16:48:22.702211000 1.858168s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-15T16:48:22.702395000 1.858351s notice: Loading data from directory /data/rethinkdb_data
+2018-05-15T16:48:22.704887700 1.860844s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:48:22.724436100 1.880394s info: Automatically using cache size of 100 MB
+2018-05-15T16:48:22.724592700 1.880548s warn: Cache size is very low and may impact performance.
+2018-05-15T16:48:22.898683000 2.054639s notice: Listening for intracluster connections on port 29015
+2018-05-15T16:48:22.903664300 2.059620s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:48:22.924737800 2.080694s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:48:22.946946400 2.102903s notice: Listening for client driver connections on port 28015
+2018-05-15T16:48:22.947567300 2.103523s notice: Listening for administrative HTTP connections on port 8080
+2018-05-15T16:48:23.128087400 2.284043s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:48:23.301066700 2.457023s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:48:23.477439300 2.633395s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:48:23.477489700 2.633445s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-15T16:48:23.944475500 3.100431s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 47.
+2018-05-15T16:48:23.952588600 3.108544s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 47. Latest log index is 139.
+2018-05-15T16:48:24.866426900 4.022383s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 47.
+2018-05-15T16:48:24.874467500 4.030424s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 47. Latest log index is 139.
+2018-05-15T16:49:03.357349300 42.513365s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-15T16:49:03.357548300 42.513564s notice: Shutting down client connections...
+2018-05-15T16:49:03.357577900 42.513593s notice: All client connections closed.
+2018-05-15T16:49:03.357580700 42.513596s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-15T16:49:03.361494200 42.517510s notice: Storage engine shut down.
+2018-05-15T16:49:12.992810200 0.912341s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-15T16:49:12.995040200 0.914572s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-15T16:49:12.996815300 0.916346s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-15T16:49:12.997003900 0.916534s notice: Loading data from directory /data/rethinkdb_data
+2018-05-15T16:49:13.004571400 0.924102s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:49:13.021930800 0.941462s info: Automatically using cache size of 101 MB
+2018-05-15T16:49:13.201970600 1.121501s notice: Listening for intracluster connections on port 29015
+2018-05-15T16:49:13.208810300 1.128341s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:49:13.239244500 1.158775s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:49:13.265788000 1.185318s notice: Listening for client driver connections on port 28015
+2018-05-15T16:49:13.266095800 1.185626s notice: Listening for administrative HTTP connections on port 8080
+2018-05-15T16:49:13.518693800 1.438224s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:49:13.702852900 1.622383s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:49:13.907108700 1.826639s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:49:13.907263000 1.826793s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-15T16:49:14.381005500 2.300535s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 48.
+2018-05-15T16:49:14.385999400 2.305529s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 48. Latest log index is 142.
+2018-05-15T16:49:14.454702900 2.374233s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 48.
+2018-05-15T16:49:14.461475500 2.381006s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 48. Latest log index is 142.
+2018-05-15T16:49:42.808876400 30.728476s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-15T16:49:42.809006500 30.728606s notice: Shutting down client connections...
+2018-05-15T16:49:42.809052000 30.728652s notice: All client connections closed.
+2018-05-15T16:49:42.809068200 30.728668s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-15T16:49:42.822909000 30.742509s notice: Storage engine shut down.
+2018-05-15T16:56:18.343862600 0.951444s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-15T16:56:18.349410900 0.956993s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-15T16:56:18.354603300 0.962185s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-15T16:56:18.354889000 0.962469s notice: Loading data from directory /data/rethinkdb_data
+2018-05-15T16:56:18.358680300 0.966261s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:56:18.438400300 1.045982s info: Automatically using cache size of 100 MB
+2018-05-15T16:56:18.438620000 1.046200s warn: Cache size is very low and may impact performance.
+2018-05-15T16:56:18.616041900 1.223622s notice: Listening for intracluster connections on port 29015
+2018-05-15T16:56:18.809482500 1.417063s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:56:18.847284300 1.454865s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T16:56:18.862373300 1.469954s notice: Listening for client driver connections on port 28015
+2018-05-15T16:56:18.862561000 1.470141s notice: Listening for administrative HTTP connections on port 8080
+2018-05-15T16:56:19.071686000 1.679267s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:56:19.287238800 1.894819s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:56:19.537403800 2.144984s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T16:56:19.537416400 2.144996s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-15T16:56:20.442914200 3.050495s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 49.
+2018-05-15T16:56:20.452903200 3.060484s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 49. Latest log index is 145.
+2018-05-15T16:56:20.739594800 3.347175s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 49.
+2018-05-15T16:56:20.745914900 3.353496s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 49. Latest log index is 145.
+2018-05-15T17:08:13.372851000 715.980333s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-15T17:08:13.372964800 715.980447s notice: Shutting down client connections...
+2018-05-15T17:08:13.373331000 715.980813s notice: All client connections closed.
+2018-05-15T17:08:13.373354700 715.980837s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-15T17:08:13.401779700 716.009262s notice: Storage engine shut down.
+2018-05-15T17:08:26.007887400 0.945222s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-15T17:08:26.009309200 0.946644s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-15T17:08:26.010953700 0.948289s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-15T17:08:26.011128700 0.948462s notice: Loading data from directory /data/rethinkdb_data
+2018-05-15T17:08:26.014525500 0.951859s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T17:08:26.031481700 0.968816s info: Automatically using cache size of 101 MB
+2018-05-15T17:08:26.212845500 1.150179s notice: Listening for intracluster connections on port 29015
+2018-05-15T17:08:26.216366900 1.153701s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T17:08:26.240386500 1.177720s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T17:08:26.259378700 1.196712s notice: Listening for client driver connections on port 28015
+2018-05-15T17:08:26.259566400 1.196900s notice: Listening for administrative HTTP connections on port 8080
+2018-05-15T17:08:26.618954100 1.556288s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T17:08:26.898459600 1.835834s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T17:08:27.145170800 2.082545s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T17:08:27.145187400 2.082561s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-15T17:08:27.459789000 2.397163s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 50.
+2018-05-15T17:08:27.486364600 2.423739s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 50. Latest log index is 148.
+2018-05-15T17:08:27.910732900 2.848107s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 50.
+2018-05-15T17:08:27.917237700 2.854612s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 50. Latest log index is 148.
+2018-05-15T17:12:38.866843200 253.804149s notice: Server got SIGTERM from pid 0, uid 0; shutting down...
+2018-05-15T17:12:38.867027100 253.804332s notice: Shutting down client connections...
+2018-05-15T17:12:38.867273300 253.804578s notice: All client connections closed.
+2018-05-15T17:12:38.867336000 253.804647s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2018-05-15T17:12:38.885055100 253.822360s notice: Storage engine shut down.
+2018-05-15T17:12:46.706684600 1.081258s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-05-15T17:12:46.708542200 1.083116s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-05-15T17:12:46.711008300 1.085583s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-05-15T17:12:46.711297400 1.085870s notice: Loading data from directory /data/rethinkdb_data
+2018-05-15T17:12:46.713543200 1.088116s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T17:12:46.727962000 1.102535s info: Automatically using cache size of 100 MB
+2018-05-15T17:12:46.911472100 1.286045s notice: Listening for intracluster connections on port 29015
+2018-05-15T17:12:46.916269100 1.290842s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T17:12:46.940095500 1.314608s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-05-15T17:12:46.957798300 1.332311s notice: Listening for client driver connections on port 28015
+2018-05-15T17:12:46.958150800 1.332663s notice: Listening for administrative HTTP connections on port 8080
+2018-05-15T17:12:47.209503300 1.584016s notice: Listening on cluster addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T17:12:47.391923400 1.766436s notice: Listening on driver addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T17:12:47.627541900 2.002054s notice: Listening on http addresses: 127.0.0.1, 172.18.0.2
+2018-05-15T17:12:47.627612000 2.002124s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-05-15T17:12:48.583070300 2.957582s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 51.
+2018-05-15T17:12:48.589298000 2.963810s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 51. Latest log index is 151.
+2018-05-15T17:12:48.756892700 3.131405s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 51.
+2018-05-15T17:12:48.765759700 3.140272s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 51. Latest log index is 151.
+2018-06-04T18:08:14.432135400 0.736029s warn: Parent directory of log file (/data/rethinkdb_data/log_file) could not be synced. (Invalid argument)
+2018-06-04T18:08:14.436373500 0.740272s notice: Running rethinkdb 2.3.6~0jessie (GCC 4.9.2)...
+2018-06-04T18:08:14.447400600 0.751297s notice: Running on Linux 4.9.87-linuxkit-aufs x86_64
+2018-06-04T18:08:14.447467800 0.751359s notice: Loading data from directory /data/rethinkdb_data
+2018-06-04T18:08:14.454543200 0.758436s warn: Failed to sync parent directory of "/data/rethinkdb_data/metadata" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-06-04T18:08:14.475454400 0.779346s info: Automatically using cache size of 273 MB
+2018-06-04T18:08:14.651912300 0.955805s notice: Listening for intracluster connections on port 29015
+2018-06-04T18:08:14.669906000 0.973798s warn: Failed to sync parent directory of "/data/rethinkdb_data/9b5ec5b7-3bdf-4da3-9640-f23fd4739493" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-06-04T18:08:14.704228800 1.008120s warn: Failed to sync parent directory of "/data/rethinkdb_data/c638d8f5-8b64-4882-a7c0-10a4406317e9" (errno: 22 - Invalid argument). You may encounter data loss in case of a system failure. (Is the file located on a filesystem that doesn't support directory sync? e.g. VirtualBox shared folders)
+2018-06-04T18:08:14.721702800 1.025594s notice: Listening for client driver connections on port 28015
+2018-06-04T18:08:14.722022700 1.025914s notice: Listening for administrative HTTP connections on port 8080
+2018-06-04T18:08:14.896455800 1.200348s notice: Listening on cluster addresses: 127.0.0.1, 172.21.0.2
+2018-06-04T18:08:15.074282700 1.378175s notice: Listening on driver addresses: 127.0.0.1, 172.21.0.2
+2018-06-04T18:08:15.255048600 1.558941s notice: Listening on http addresses: 127.0.0.1, 172.21.0.2
+2018-06-04T18:08:15.255170100 1.559062s notice: Server ready, "b564f6707814_xt4" d18e8ace-e480-4011-a3f2-fc32490b4aec
+2018-06-04T18:08:15.951593900 2.255486s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: Starting a new Raft election for term 52.
+2018-06-04T18:08:15.960868000 2.264760s info: Table c638d8f5-8b64-4882-a7c0-10a4406317e9: This server is Raft leader for term 52. Latest log index is 154.
+2018-06-04T18:08:16.236226000 2.540117s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: Starting a new Raft election for term 52.
+2018-06-04T18:08:16.241733500 2.545625s info: Table 9b5ec5b7-3bdf-4da3-9640-f23fd4739493: This server is Raft leader for term 52. Latest log index is 154.

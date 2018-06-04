@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-title>My Friends</mat-card-title>
+  <div *ngIf="friends$ | async as friends">
+    <mat-list>
+      <mat-list-item *ngFor="let friend of friends">
+        <mat-icon matListIcon>account_circle</mat-icon>
+        {{friend.name}}
+        <a href="#" mat-raised-button [routerLink]="['/friend-viewer', friend.id]">View</a>
+      </mat-list-item>
+    </mat-list>
+  </div>
+</mat-card>

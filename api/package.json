@@ -19,6 +19,7 @@
     "lodash": "^4.11.2",
     "morgan": "~1.6.1",
     "node-geocoder": "^3.10.0",
+    "oauth": "^0.9.15",
     "request-promise": "^3.0.0",
     "rethinkdb": "~2.3.1",
     "serve-favicon": "~2.3.0",

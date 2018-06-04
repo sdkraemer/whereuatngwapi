@@ -1,0 +1,14 @@
+<div class="content" fxLayout="row" fxLayout.sm="column" fxLayoutGap="16px">
+  <mat-card fxFlex *ngIf="friend$ | async as friend">
+    <mat-card-title>{{friend.name}}</mat-card-title>
+    <mat-card-content>
+      <h4>Locations</h4>
+      <mat-card *ngFor="let moment of moments$ | async">
+        <mat-card-title>{{moment.message}}</mat-card-title>
+        <mat-card-content>
+          <tweet-moment *ngIf="moment.twitterUrl" [moment]="moment"></tweet-moment>
+        </mat-card-content>
+      </mat-card>
+    </mat-card-content>
+  </mat-card>
+</div>

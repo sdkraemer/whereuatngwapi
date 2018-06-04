@@ -1,97 +1,130 @@
-import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
+import { Injectable } from "@angular/core";
 import { BehaviorSubject } from "rxjs/Rx";
-import 'rxjs/add/operator/filter';
-import * as auth0 from 'auth0-js';
-import { AuthHttp } from 'angular2-jwt';
-import { environment } from '../../environments/environment';
-import { User } from '../users/user';
+import * as auth0 from "auth0-js";
+import { AUTH_CONFIG } from "./auth0-config";
+import { UserProfile } from "app/core/models/userprofile";
+import {
+  HttpClient,
+  HttpHeaders,
+  HttpErrorResponse
+} from "@angular/common/http";
+import { environment } from "../../environments/environment";
+import { IUser, User } from "app/core/models/user";
+
+// import { Router } from "@angular/router";
+// import { Observable } from "rxjs/Observable";
+// import "rxjs/add/operator/filter";
+// import { AuthHttp } from "angular2-jwt";
 
 @Injectable()
 export class AuthService {
-
   auth0 = new auth0.WebAuth({
-    clientID: 'KFsjWJFXw8iuATzg3WiyuVVohDRCgUug',
-    domain: 'feeldaburn.auth0.com',
-    responseType: 'token id_token',
-    audience: 'http://localhost/api',
-    redirectUri: 'http://localhost/callback',      
-    scope: 'openid profile email read:messages'
+    clientID: AUTH_CONFIG.CLIENT_ID,
+    domain: AUTH_CONFIG.CLIENT_DOMAIN,
+    responseType: "token id_token",
+    redirectUri: AUTH_CONFIG.REDIRECT,
+    audience: AUTH_CONFIG.AUDIENCE,
+    scope: AUTH_CONFIG.SCOPE
   });
+  userProfile: UserProfile;
 
-  private _user: BehaviorSubject<User> = new BehaviorSubject(null);
-  public readonly user: Observable<User> = this._user.asObservable();
+  // Create a stream of logged in status to communicate throughout app
+  loggedIn: boolean;
+  loggedIn$ = new BehaviorSubject<boolean>(this.loggedIn);
 
-  private apiUrl: string = `${environment.apiUrl}/users`;
+  user: IUser;
+  user$ = new BehaviorSubject<IUser>(this.user);
 
-  constructor(public router: Router,
-              private authHttp: AuthHttp) {}
+  private usersApiUrl: string = `${environment.apiUrl}/users`;
 
-  public login(): void {
+  constructor(private http: HttpClient) {
+    // If authenticated, set local profile property and update login status subject
+    if (this.authenticated) {
+      this.userProfile = JSON.parse(localStorage.getItem("profile"));
+      this.setLoggedIn(true);
+      this.createUser(this.userProfile);
+    }
+  }
+
+  setLoggedIn(value: boolean) {
+    // Update login status subject
+    this.loggedIn$.next(value);
+    this.loggedIn = value;
+  }
+
+  login() {
+    // Auth0 authorize request
     this.auth0.authorize();
   }
 
-   public handleAuthentication(): void {
+  handleAuth() {
+    // When Auth0 hash parsed, get profile
     this.auth0.parseHash((err, authResult) => {
-      if (authResult && authResult.accessToken && authResult.idToken) {
-        window.location.hash = '';
-        this.setSession(authResult);
-        this.getUserAndCreateUserIfNotExists(authResult.idTokenPayload);
-        this.router.navigate(['/home']);
+      if (authResult && authResult.accessToken) {
+        window.location.hash = "";
+        this._getProfile(authResult);
       } else if (err) {
-        this.router.navigate(['/home']);
-        console.log(err);
-      }
-      else if(this.isAuthenticated() && localStorage.getItem('profile')){
-        this.getUserAndCreateUserIfNotExists(JSON.parse(localStorage.getItem('profile')));
+        console.error(`Error: ${err.error}`);
       }
     });
   }
-  
 
-  private setSession(authResult): void {
-    // Set the time that the access token will expire at
-    const expiresAt = JSON.stringify((authResult.expiresIn * 1000) + new Date().getTime());
-    localStorage.setItem('access_token', authResult.accessToken);
-    localStorage.setItem('id_token', authResult.idToken);
-    localStorage.setItem('token', authResult.idToken);
-    localStorage.setItem('expires_at', expiresAt);
-    localStorage.setItem('profile', JSON.stringify(authResult.idTokenPayload));
+  private _getProfile(authResult) {
+    // Use access token to retrieve user's profile and set session
+    this.auth0.client.userInfo(authResult.accessToken, (err, profile) => {
+      this._setSession(authResult, profile);
+      this.createUser(profile);
+    });
   }
 
-  public logout(): void {
-    // Remove tokens and expiry time from localStorage
-    localStorage.removeItem('access_token');
-    localStorage.removeItem('id_token');
-    localStorage.removeItem('token');
-    localStorage.removeItem('expires_at');
-    localStorage.removeItem('profile');
-     this._user.next(null);
-    // Go back to the home route
-    this.router.navigate(['/']);
+  private _setSession(authResult, profile) {
+    const expTime = authResult.expiresIn * 1000 + Date.now();
+    // Save session data and update login status subject
+    localStorage.setItem("access_token", authResult.accessToken);
+    localStorage.setItem("profile", JSON.stringify(profile));
+    localStorage.setItem("expires_at", JSON.stringify(expTime));
+    this.userProfile = profile;
+    this.setLoggedIn(true);
   }
 
-  public isAuthenticated(): boolean {
-    // Check whether the current time is past the
-    // access token's expiry time
-    const expiresAt = JSON.parse(localStorage.getItem('expires_at'));
-    return new Date().getTime() < expiresAt;
+  logout() {
+    // Remove tokens and profile and update login status subject
+    localStorage.removeItem("access_token");
+    localStorage.removeItem("profile");
+    localStorage.removeItem("expires_at");
+    this.userProfile = undefined;
+    this.setLoggedIn(false);
+    this.setUser(null);
   }
 
-  private getUserAndCreateUserIfNotExists(idTokenPayload) {
+  get authenticated(): boolean {
+    // Check if current date is greater than expiration
+    const expiresAt = JSON.parse(localStorage.getItem("expires_at"));
+    return Date.now() < expiresAt;
+  }
 
+  private createUser(profile: UserProfile) {
     var userData = {
-      name: idTokenPayload.name,
-      email: idTokenPayload.email,
-      picture: idTokenPayload.picture,
-      sub: idTokenPayload.sub
+      name: profile.name,
+      email: profile.email,
+      picture: profile.picture,
+      sub: profile.sub
     };
 
-    this.authHttp.post(this.apiUrl, userData)
-      .map(res => res.json())
-      .subscribe(userData => {
-        this._user.next(new User(userData));
+    this.http
+      .post(this.usersApiUrl, profile, {
+        headers: new HttpHeaders().set(
+          "Authorization",
+          `Bearer ${localStorage.getItem("access_token")}`
+        )
+      })
+      .subscribe((userData: IUser) => {
+        this.setUser(new User(userData));
       });
+  }
+
+  private setUser(user: IUser) {
+    this.user$.next(user);
+    this.user = user;
   }
 }

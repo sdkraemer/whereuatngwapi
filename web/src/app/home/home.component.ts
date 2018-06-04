@@ -1,26 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from './../auth/auth.service';
-import { UserService } from '../users/user.service';
+import { Component, OnInit } from "@angular/core";
+import { AuthService } from "./../auth/auth.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html'
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styles: [
+    `
+  .content {
+    padding: 12px;
+  }
+  `
+  ]
 })
 export class HomeComponent implements OnInit {
+  constructor(public auth: AuthService) {}
 
-  constructor(public auth: AuthService,
-              private userService: UserService) { }
-
-  ngOnInit() {
-  }
-
-  callApi() {
-    if(this.auth.isAuthenticated()){
-      this.userService.api()
-        .subscribe(() => {
-          console.log("Did something happen?");
-        });
-    }
-  }
-
+  ngOnInit() {}
 }

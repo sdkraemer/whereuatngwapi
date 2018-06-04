@@ -1,0 +1,7 @@
+<div>
+  {{moment.twitter.text}}
+  <mat-divider></mat-divider>
+  <div *ngFor="let media of moment.twitter.media">
+    <img [src]="media.media_url" />
+  </div>
+</div>

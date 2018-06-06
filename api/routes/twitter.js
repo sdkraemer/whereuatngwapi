@@ -1,4 +1,4 @@
-var OAuth2 = require("OAuth").OAuth2;
+var OAuth2 = require("oauth").OAuth2;
 const https = require("https");
 var rp = require("request-promise");
 var dbLocations = require("../lib/dbLocations");

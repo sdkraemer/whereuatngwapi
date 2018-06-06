@@ -38,7 +38,7 @@ var jwtCheck = jwt({
 app.use("/api/locations", [jwtCheck, userIdAuth]);
 app.use("/api/ninjas", [jwtCheck, userIdAuth]);
 app.use("/api/users", [jwtCheck, userIdAuth]);
-//app.use("/api/twitter-setup", [jwtCheck, userIdAuth]);
+app.use("/api/twitter-setup", [jwtCheck, userIdAuth]);
 app.use("/api/authhttp", [jwtCheck, userIdAuth]);
 app.use("/api/ping", function(req, res) {
   res.send("Hello world");
@@ -49,7 +49,7 @@ db.setup();
 var index = require("./routes/index.js")(app);
 var users = require("./routes/users.js")(app);
 var locations = require("./routes/locations.js")(app);
-//var twitter = require("./routes/twitter.js")(app);
+var twitter = require("./routes/twitter.js")(app);
 var ninjas = require("./routes/ninjas.js")(app);
 var authhttp = require("./routes/authhttp.js")(app);
 

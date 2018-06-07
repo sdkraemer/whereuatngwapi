@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
-  apiUrl: "http://165.227.57.162/api",
+  apiUrl: "http://www.whereuat.net/api",
   auth0: {
-    audience: "http://165.227.57.162/api",
-    redirect: "http://165.227.57.162/auth0callback"
+    audience: "http://www.whereuat.net/api",
+    redirect: "http://www.whereuat.net/auth0callback"
   }
 };

@@ -19,11 +19,9 @@ app.use(
   })
 );
 
-//  var jwtCheck = jwt({
-//    secret: process.env.AUTH0_CLIENT_SECRET,
-//    audience: process.env.AUTH0_CLIENT_AUDIENCE
-//  });
 var auth0Config = config.get("auth0");
+console.log("AUTH0 CLIENT_DOMAIN:" + auth0Config.CLIENT_DOMAIN);
+console.log("AUTH0_AUDIENCE:" + auth0Config.AUTH0_AUDIENCE);
 
 var jwtCheck = jwt({
   secret: jwks.expressJwtSecret({

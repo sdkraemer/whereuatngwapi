@@ -1,6 +1,6 @@
 {
   "auth0": {
     "CLIENT_DOMAIN": "feeldaburn.auth0.com",
-    "AUTH0_AUDIENCE": "http://165.227.57.162/api"
+    "AUTH0_AUDIENCE": "http://www.whereuat.net/api"
   }
 }

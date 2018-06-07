@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
-  apiUrl: "http://changeme_in_environment_ts/api",
+  apiUrl: "http://165.227.57.162/api",
   auth0: {
-    audience: "http://changeme_in_environment_ts.net/api",
-    redirect: "http://changeme_in_environment_ts.net/auth0callback"
+    audience: "http://165.227.57.162.net/api",
+    redirect: "http://165.227.57.162.net/auth0callback"
   }
 };

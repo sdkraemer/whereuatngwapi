@@ -49,7 +49,6 @@ module.exports = function(app) {
       });
       result.on("end", function() {
         var tweet = JSON.parse(buffer);
-        //console.dir(tweet);
         var tweetData = {
           id: tweet.id,
           text: tweet.text,

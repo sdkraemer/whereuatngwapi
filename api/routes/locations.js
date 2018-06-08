@@ -2,6 +2,7 @@ var _ = require("lodash");
 var db = require("../lib/db");
 var dbAccounts = require("../lib/dbAccounts");
 var rp = require("request-promise");
+var twitterService = require("../services/twitterService");
 
 var geocoderProvider = "google";
 var httpAdapter = "https";
@@ -44,14 +45,33 @@ module.exports = function(app) {
             }
           }
         }
-        console.log("geocoder: %j", geoCodingResult);
-
-        db.insertLocation(location, function(locErr, result) {
-          if (locErr) {
-            throw locErr;
-          }
-          res.json(result);
-        });
+        /*
+        {
+        "lat": 32.2861863,
+        "long": -110.9448018,
+        "time": "1528409143",
+        "twitterUrl": "https://twitter.com/sdkraemer/status/990021944153030657",
+        "message": "Googoo cluster time!"
+        }
+        */
+        if (location.twitterUrl) {
+          twitterService.getTweetData(location.twitterUrl, function(tweetData) {
+            location.twitter = tweetData;
+            db.insertLocation(location, function(locErr, result) {
+              if (locErr) {
+                throw locErr;
+              }
+              res.json(result);
+            });
+          });
+        } else {
+          db.insertLocation(location, function(locErr, result) {
+            if (locErr) {
+              throw locErr;
+            }
+            res.json(result);
+          });
+        }
       })
       .catch(function(err) {
         console.log(err);

@@ -44,7 +44,7 @@ app.use("/api/ping", function(req, res) {
   res.send("Hello world");
 });
 
-db.setup();
+//db.setup();
 
 var index = require("./routes/index.js")(app);
 var users = require("./routes/users.js")(app);

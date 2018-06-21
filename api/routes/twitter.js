@@ -57,7 +57,7 @@ module.exports = function(app) {
           media: []
         };
         //TODO:and getting more than just the id and text into each location
-        if (tweet.entities) {
+        if (tweet.entities && tweet.entities.media) {
           tweet.entities.media.forEach(media => {
             var filteredMedia = {
               media_url: media.media_url,

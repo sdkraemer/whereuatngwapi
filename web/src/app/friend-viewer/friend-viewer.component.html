@@ -6,7 +6,7 @@
       <mat-card *ngFor="let moment of moments$ | async">
         <mat-card-title>{{moment.message}}</mat-card-title>
         <mat-card-content>
-          <tweet-moment *ngIf="moment.twitterUrl" [moment]="moment"></tweet-moment>
+          <tweet-moment *ngIf="moment.twitterUrl && moment.twitter" [moment]="moment"></tweet-moment>
         </mat-card-content>
       </mat-card>
     </mat-card-content>

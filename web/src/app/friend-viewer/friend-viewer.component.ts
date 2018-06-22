@@ -4,6 +4,7 @@ import { ActivatedRoute, ParamMap } from "@angular/router";
 import { LocationsService } from "../locations/locations.service";
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
 import { ILocation } from "../core/models/location";
+import { Observable } from "rxjs/Observable";
 
 @Component({
   selector: "friend-viewer",
@@ -18,6 +19,8 @@ export class FriendViewerComponent implements OnInit {
   moments: ILocation[];
   moments$ = new BehaviorSubject<ILocation[]>(this.moments);
 
+  recentLocations$: Observable<ILocation[]>;
+
   constructor(
     private route: ActivatedRoute,
     private friendService: FriendService,
@@ -25,16 +28,11 @@ export class FriendViewerComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // this.friend$ = this.route.paramMap.pipe(
-    //   switchMap((params: ParamMap) => {
-    //     this.friendService.getFriend(params.get("id"));
-    //   })
-    // );
-    let id = this.route.snapshot.paramMap.get("id");
-    this.friend$ = this.friendService.getFriend(id);
+    let userId = this.route.snapshot.paramMap.get("id");
+    this.friend$ = this.friendService.getFriend(userId);
 
     this.locationService
-      .getLocations(id)
+      .getLocations(userId)
       .subscribe((locations: ILocation[]) => {
         let tempLocations: ILocation[] = [];
         let tempMoments: ILocation[] = [];
@@ -47,5 +45,7 @@ export class FriendViewerComponent implements OnInit {
         this.locations$.next(tempLocations);
         this.moments$.next(tempMoments);
       });
+
+    this.recentLocations$ = this.locationService.getRecentLocations(userId);
   }
 }

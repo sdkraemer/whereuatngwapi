@@ -1,14 +1,29 @@
-<div class="content" fxLayout="row" fxLayout.sm="column" fxLayoutGap="16px">
-  <mat-card fxFlex *ngIf="friend$ | async as friend">
-    <mat-card-title>{{friend.name}}</mat-card-title>
-    <mat-card-content>
-      <h4>Locations</h4>
-      <mat-card *ngFor="let moment of moments$ | async">
-        <mat-card-title>{{moment.message}}</mat-card-title>
-        <mat-card-content>
-          <tweet-moment *ngIf="moment.twitterUrl && moment.twitter" [moment]="moment"></tweet-moment>
-        </mat-card-content>
-      </mat-card>
-    </mat-card-content>
-  </mat-card>
+<div class="content">
+  <mat-tab-group>
+    <mat-tab label="Moments">
+      <h1>Moments</h1>
+      <div fxLayout="row" fxLayout.sm="column" fxLayoutGap="16px">
+        <mat-card fxFlex *ngIf="friend$ | async as friend">
+          <mat-card-title>{{friend.name}}</mat-card-title>
+          <mat-card-content>
+            <h4>Locations</h4>
+            <mat-card *ngFor="let moment of moments$ | async">
+              <mat-card-title>{{moment.message}}</mat-card-title>
+              <mat-card-content>
+                <tweet-moment *ngIf="moment.twitterUrl && moment.twitter" [moment]="moment"></tweet-moment>
+              </mat-card-content>
+            </mat-card>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-tab>
+    <mat-tab label="Recent Locations">
+      <h1>Recent Locations</h1>
+      <mat-list>
+        <mat-list-item *ngFor="let location of recentLocations$ | async">{{location.time | date:'medium'}} - {{location.city}}</mat-list-item>
+      </mat-list>
+    </mat-tab>
+  </mat-tab-group>
+
+
 </div>

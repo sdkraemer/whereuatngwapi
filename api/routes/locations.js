@@ -113,6 +113,9 @@ function getLocationsQueryParameters(query) {
   if (query.mostRecent) {
     queryParameters.mostRecent = query.mostRecent;
   }
+  if (query.count) {
+    queryParameters.count = parseInt(query.count);
+  }
 
   return queryParameters;
 }

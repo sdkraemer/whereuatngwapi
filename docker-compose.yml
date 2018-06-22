@@ -27,7 +27,7 @@ services:
       - rethinkdb:rethinkdb
     ports:
       - "3000:3000"
-      - "7000:7000"
+    #  - "7000:7000"
     networks:
       - nodeapp-network
     environment:

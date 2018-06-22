@@ -8,6 +8,14 @@ import { ILocation } from "../core/models/location";
 export class LocationsService {
   constructor(private httpClient: HttpClient) {}
 
+  getMoments(userId) {
+    let params = new HttpParams();
+    params = params.append("count", "100");
+    params = params.append("moments", "true");
+
+    return this.getLocations(userId, params);
+  }
+
   getLocations(userId, params: HttpParams = null) {
     let headers = new HttpHeaders();
     headers = headers.append(

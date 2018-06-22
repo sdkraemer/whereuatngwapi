@@ -116,6 +116,9 @@ function getLocationsQueryParameters(query) {
   if (query.count) {
     queryParameters.count = parseInt(query.count);
   }
+  if (query.moments) {
+    queryParameters.moments = true;
+  }
 
   return queryParameters;
 }

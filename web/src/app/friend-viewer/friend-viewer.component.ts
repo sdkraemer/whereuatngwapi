@@ -17,7 +17,8 @@ export class FriendViewerComponent implements OnInit {
   locations$ = new BehaviorSubject<ILocation[]>(this.locations);
 
   moments: ILocation[];
-  moments$ = new BehaviorSubject<ILocation[]>(this.moments);
+  //moments$ = new BehaviorSubject<ILocation[]>(this.moments);
+  moments$: Observable<ILocation[]>;
 
   recentLocations$: Observable<ILocation[]>;
 
@@ -31,21 +32,22 @@ export class FriendViewerComponent implements OnInit {
     let userId = this.route.snapshot.paramMap.get("id");
     this.friend$ = this.friendService.getFriend(userId);
 
-    this.locationService
-      .getLocations(userId)
-      .subscribe((locations: ILocation[]) => {
-        let tempLocations: ILocation[] = [];
-        let tempMoments: ILocation[] = [];
-        locations.forEach(function(location) {
-          tempLocations.push(location);
-          if (location.message || location.twitterUrl) {
-            tempMoments.push(location);
-          }
-        });
-        this.locations$.next(tempLocations);
-        this.moments$.next(tempMoments);
-      });
+    // this.locationService
+    //   .getLocations(userId)
+    //   .subscribe((locations: ILocation[]) => {
+    //     let tempLocations: ILocation[] = [];
+    //     let tempMoments: ILocation[] = [];
+    //     locations.forEach(function(location) {
+    //       tempLocations.push(location);
+    //       if (location.message || location.twitterUrl) {
+    //         tempMoments.push(location);
+    //       }
+    //     });
+    //     this.locations$.next(tempLocations);
+    //     this.moments$.next(tempMoments);
+    //   });
 
+    this.moments$ = this.locationService.getMoments(userId);
     this.recentLocations$ = this.locationService.getRecentLocations(userId);
   }
 }

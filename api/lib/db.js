@@ -662,29 +662,27 @@ module.exports.findLocationsByUserId = function(
       .getAll(userId, { index: "user_id" });
 
     if (queryParameters.after && queryParameters.before) {
-      query = query
-        .filter(function(location) {
-          return location("time").during(
-            r.epochTime(queryParameters.after),
-            r.epochTime(queryParameters.before)
-          );
-        })
-        .orderBy(r.desc("time"));
-    } else {
-      query = query.orderBy(r.desc("time"));
-      if (queryParameters.mostRecent) {
-        query = query.limit(1);
-      } else if (queryParameters.count) {
-        query = query.limit(queryParameters.count);
-      }
+      query = query.filter(function(location) {
+        return location("time").during(
+          r.epochTime(queryParameters.after),
+          r.epochTime(queryParameters.before)
+        );
+      });
+    }
+    if (queryParameters.moments) {
+      query = query.filter(function(loc) {
+        return loc("twitterUrl").ne("");
+      });
     }
 
-    // else if (queryParameters.mostRecent){
-    //     query = r.db(dbConfig.db).table('locations').getAll( userId, { index: 'user_id' } ).orderBy(r.desc('time')).limit(1);
-    // }
-    // else{
-    //     query = r.db(dbConfig.db).table('locations').getAll( userId, { index: 'user_id' } ).orderBy(r.desc('time'));
-    // }
+    query = query.orderBy(r.desc("time"));
+
+    if (queryParameters.mostRecent) {
+      query = query.limit(1);
+    } else if (queryParameters.count) {
+      query = query.limit(queryParameters.count);
+    }
+
     query.run(connection, function(err, cursor) {
       if (err) {
         logerror(
